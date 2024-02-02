@@ -125,7 +125,7 @@ Forgetting to replace `{category_id}` or the page number placeholder `{page_numb
 
 ## Conclusion
 
-Correctly configuring the `first`, `start`, and `stop` parameters is key to ensuring the completeness and accuracy of data collection tasks. By paying special attention to the following points, you can effectively avoid data omission or duplication:
+Correctly configuring the `first`, `start`, and `stop` parameters is key to ensuring the completeness and accuracy of data collection tasks. Paying close attention to the following points can help you effectively prevent data omission or duplication:
 
 - Use the `first` parameter to explicitly specify the special URL for the first page (if any).
 - Adjust the start parameter appropriately based on the actual page layout to ensure it commences from the correct page.
