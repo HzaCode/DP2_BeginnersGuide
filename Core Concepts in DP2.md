@@ -42,3 +42,31 @@ Considering the need to process attachments in data processing tasks, the DP2 pl
 ## Data Updates and Notifications
 
 To keep users informed of the latest developments in data processing, the DP2 platform supports configuring real-time data update notification mechanisms. With simple settings, users can receive email or WeChat message notifications of data updates, allowing real-time monitoring of the status and results of data processing. This mechanism provides an efficient project management and monitoring tool for users, ensuring transparency and traceability in data processing activities.
+
+To ensure consistency with the specified Markdown document style, here is the content translated into English and formatted accordingly:
+
+# Operation Process
+
+## Creating a Study
+
+First, you need to create a study (**Study**), defining the study's name (**STU**) and steps (**steps**). The creation of a study involves setting up global variables and basic configurations for steps.
+
+## Configuring a Step
+
+Within a step, configure the **URL**, **method** (GET or POST), **data**, **cookies**, etc. These configurations determine how the crawler interacts with the target website. The step's configuration also includes how to handle **input data** (**Data In**) and **output data** (**Data Out**), as well as how to use **Jpath** for data processing.
+
+## Handling Data In and Data Out
+
+In a step, use **Data In** to receive output from the previous step, and process and output data through **Data Out**. This allows you to pass and modify data between steps, facilitating data flow and transformation.
+
+## Using Jpath
+
+With **Jpath**, you can precisely extract the information you need from JSON data. Jpath offers a rich set of query functionalities, such as filtering, sorting, and mapping, making data processing more flexible.
+
+## Calling APIs
+
+In **Data Out**, configure API calls to send data to databases or other external systems. This ensures data storage and subsequent processing. API calls can be direct or made through DP2's API.
+
+
+
+
