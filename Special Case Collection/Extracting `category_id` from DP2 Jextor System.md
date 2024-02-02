@@ -1,10 +1,10 @@
-# **从Jextor系统中提取 `category_id`**
+# **Extracting `category_id`**
 
-在**DP2** Jextor系统中工作时，您可能需要从`TASK_extra_data`字段中提取特定信息，如`category_id`。此字段通常包含有嵌套信息的JSON格式字符串。正确提取信息需要遵循特定的步骤和格式。以下是详细的步骤和代码示例，包括常见错误及其避免方法：
+When working with the **DP2** Jextor system, you might need to extract specific information, such as `category_id`, from the `TASK_extra_data` field. This field typically contains a JSON-formatted string with nested information. Correctly extracting this information requires following specific steps and formatting. Below are detailed steps and code examples, including common mistakes and their avoidance methods:
 
-## 步骤1：了解`TASK_extra_data`
+##  `TASK_extra_data`
 
-`TASK_extra_data`是Jextor任务配置中包含与任务相关的附加数据的字段。这些数据通常以JSON格式存储。例如：
+`TASK_extra_data` is a field in Jextor task configurations that contains additional data related to the task, usually stored in JSON format. For example:
 
 ```json
 {
@@ -14,15 +14,15 @@
 }
 ```
 
-## 步骤2：编辑任务元素
+## Editing Task Elements
 
-在任务的`elements`对象中，您需要定义如何提取`category_id`。您需要指定一个键，如`category_id`，并使用适当的`col`和`callback`键值对。
+In the task's `elements` object, you need to define how to extract `category_id`. You need to specify a key, such as `category_id`, and use appropriate `col` and `callback` key-value pairs.
 
-## 步骤3：使用正确的回调函数
+## Using the Correct Callback Function
 
-要从`TASK_extra_data`字段提取`category_id`，您需要使用一个回调函数。该函数将解析JSON字符串并提取您需要的值。
+To extract `category_id` from the `TASK_extra_data` field, you need to use a callback function. This function will parse the JSON string and extract the value you need.
 
-## 步骤4：配置示例
+## Configuration Example
 
 ```json
 {
@@ -35,37 +35,37 @@
 }
 ```
 
-在此配置中，`json_extract##category_id`是一个回调函数，用于从`TASK_extra_data`提取`category_id`字段的值。
+In this configuration, `json_extract##category_id` is a callback function used to extract the value of the `category_id` field from `TASK_extra_data`.
 
-## 常见错误
+## Common Mistakes
 
-- **直接引用**：直接引用`TASK_extra_data`将不会提取任何特定字段。
+- **Direct Reference**: Directly referencing `TASK_extra_data` will not extract any specific field.
 
-    错误配置示例：
+    Incorrect configuration example:
     
     ```json
     {
-      "category_id": "TASK_extra_data" // 这将直接返回整个TASK_extra_data内容
+      "category_id": "TASK_extra_data" // This will directly return the entire TASK_extra_data content
     }
     ```
     
-- **缺少回调函数**：如果您没有指定回调函数或指定错误，您将无法从JSON字符串中提取任何值。
+- **Missing Callback Function**: If you do not specify a callback function or specify it incorrectly, you will not be able to extract any value from the JSON string.
     
-    错误配置示例：
+    Incorrect configuration example:
     
     ```json
     {
       "category_id": {
         "col": "TASK_extra_data",
-        "callback": "category_id" // 这是错误的，应使用json_extract##category_id
+        "callback": "category_id" // This is incorrect; should use json_extract##category_id
       }
     }
     ```
     
 
-## 正确结果
+## Correct Outcome
 
-使用正确的配置，您将得到以下提取结果：
+With the correct configuration, you will obtain the following extraction result:
 
 ```json
 {
@@ -74,4 +74,4 @@
 }
 ```
 
-在此结果中，`"category_id": "21"`正确反映了从`TASK_extra_data`提取的`category_id`值。
+In this result, `"category_id": "21"` correctly reflects the `category_id` value extracted from `TASK_extra_data`.
