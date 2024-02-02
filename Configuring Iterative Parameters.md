@@ -7,7 +7,7 @@ When executing data collection tasks, correctly configuring iterative parameters
 {
   "project_name": "{STU}.list",
   "url": {
-    "pattern": "<https://www.examplemed.com/main/list.html?cId={category_id}&pn={page_number}.html>", 
+    "pattern": " https://www.examplemed.com/main/list.html?cId={category_id}&pn={page_number}.html ", 
     "iteration": {
       "start": 1,
       "stop": "{TotalPageNum}",
@@ -42,7 +42,7 @@ Incorrectly setting the `start` value to 2, mistakenly assuming that the first p
 {
   "project_name": "{STU}.list",
   "url": {
-    "pattern": "<https://www.examplemed.com/main/list.html?cId={category_id}&pn={page_number}.html>", 
+    "pattern": " https://www.examplemed.com/main/list.html?cId={category_id}&pn={page_number}.html ", 
     "iteration": {
       "start": 2, // Incorrectly skipped the first page
       "stop": "{TotalPageNum}",
@@ -65,7 +65,7 @@ When the first page has a special URL format but the `first` parameter is not us
 {
   "project_name": "{STU}.list",
   "url": {
-    "pattern": "<https://www.examplepharm.com/main/product-list.html?cId={category_id}&pn=(*).html>", 
+    "pattern": " https://www.examplepharm.com/main/product-list.html?cId={category_id}&pn=(*).html ", 
     "iteration": {
       "first": "1",  // If the first page is special, it should be set to the actual situation
       "start": 1,    // If the first page is special, start from 2
@@ -89,7 +89,7 @@ Hardcoding `TotalPageNum` as an estimated value instead of dynamically obtaining
 {
   "project_name": "{STU}.list",
   "url": {
-    "pattern": "<https://www.examplemed.com/main/list.html?cId={category_id}&pn={page_number}.html>", 
+    "pattern": " https://www.examplemed.com/main/list.html?cId={category_id}&pn={page_number}.html ", 
     "iteration": {
       "start": 1,
       "stop": 5, // Assuming the total number of pages is 5, which may not match reality
@@ -112,7 +112,7 @@ Forgetting to replace `{category_id}` or the page number placeholder `{page_numb
 {
   "project_name": "{STU}.list",
   "url": {
-    "pattern": "<https://www.examplemed.com/main/list.html?cId=&pn={page_number}.html>",   // Forgot to replace `{category_id}`
+    "pattern": " https://www.examplemed.com/main/list.html?cId=&pn={page_number}.html ",   // Forgot to replace `{category_id}`
     "iteration": {
       "start": 1,
       "stop": "{TotalPageNum}",
