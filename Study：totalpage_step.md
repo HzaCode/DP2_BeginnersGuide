@@ -2,9 +2,9 @@
 
 ## Configuring the First Step (totalpage_step)
 
-### Understanding the Purpose of totalpage_step
 
- 
+
+ ### Step Description:
   `totalpage_step` is the initial step in a Study, primarily aimed at determining the total number of pages in the data source. This step is critical for planning the entire data extraction task, as it dictates the number of pages that subsequent steps will need to process. Knowing the total number of pages aids in efficiently allocating resources, optimizing extraction strategies, and ensuring no data is missed.
 
 ### Configuring URL
