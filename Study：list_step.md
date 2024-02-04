@@ -80,7 +80,7 @@ When the first page has a special URL format, but the `first` parameter is not c
     "pattern": "https://www.examplepharm.com/main/product-list.html?cId={category_id}&pn=(*).html",
     "iteration": {
       "first": "1",  // If the first page is special, should be set to actual conditions
-      "start": 2,    // If the first page is special, start from the second page
+      "start": 1,    // If the first page is special, start from the second page
       "stop": "{TotalPageNum}",
       "format": "{}"
     }
