@@ -1,6 +1,6 @@
 # Creating a Study
 
-## Extract Page Information in the `list_step` Step
+## Extract Page Information in the `list_step` 
 
 In the `list_step` step of a Study, Jexter serves as a potent instrument for gleaning key data from list pages, such as names and links of products. Below, we detail examples showcasing Jexter's application across varied HTML structures encountered on numerous informational categorization sites.
 
