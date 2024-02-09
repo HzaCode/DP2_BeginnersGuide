@@ -1,1 +1,55 @@
+ # Creating a Study
+## Configuring `category_step`
+### Step Description
+Configuring the `category_step` in the DP2 system is the initial phase in the data extraction process, aimed at gathering category information from a website's category page. This step is crucial for laying the groundwork for subsequent extraction phases, such as retrieving data from list pages. Typically, this configuration requires only a single URL because the category page is often a static webpage that houses links to all categories. This process ensures a structured approach to data extraction by systematically categorizing and accessing the website's content through its category structure.
 
+
+### Data Input (`data_in`)
+In the `data_in` section, you need to provide test data to verify the effectiveness of your configuration. This might include example URLs or other relevant information to ensure the accuracy of your configuration.
+
+### Defining Global Variables
+Define global variables, such as `"STU"`, for reference throughout the configuration to ensure consistency and reusability of your configuration.
+
+### Setting Project Name
+The project name should clearly reflect its purpose and content. For example, using `{STU}.category` as the name helps differentiate between different extraction steps.
+
+### Specifying the URL
+Specify the `url` of the category page, ensuring it directly links to the page containing all category links.
+
+### Configuring Data Output (`data_out`)
+In the `data_out` field, define how the extracted data will be formatted and passed to the next step. Common processing methods include JMESPath or jq expressions.
+
+### Example Configuration
+Below is a typical example of a `category_step` configuration, demonstrating how to use the aforementioned parameters:
+
+```json
+{
+  "STU": "company.<CompanyDrugAbbreviation>.drugs",
+  "steps": [
+    {
+      "project_name": "{STU}.category",
+      "url": "https://www.example.com/categories", 
+      "type": "one-off",
+      "method": "GET",
+      "data_in": {
+        "note": "Test data for configuration",
+        "data_for_test": []
+      },
+      "data_out": {
+        "jpath": "expression for extracting categories"
+      },
+      "interval": 86400
+    }
+  ]
+}
+```
+
+### Considerations
+
+- **Unique Global Variables**: Ensure the value of "STU" is unique to avoid confusion with other studies in the system. This helps maintain clarity and ease of management for your project.
+
+- **Testing Configuration Before Running**: Before actually running, use the DP2 platform's test feature to verify the correctness of your configuration. This process is completed through the interface's "Test Configuration Parameters," and if the configuration is correct and error-free, a new project file will be generated. This step is crucial as it can prevent potential errors and problems, ensuring a smooth data extraction process.
+
+## Summary
+
+After completing the `category_step`, you will have obtained category information, which can then be used in the `list_step` or other steps to further extract detailed data from each category.  Through precise configuration and thorough testing, you can ensure effective extraction of the needed category information from the category page, thus providing accurate input data for subsequent steps.
