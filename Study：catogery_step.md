@@ -24,24 +24,34 @@ Below is a typical example of a `category_step` configuration, demonstrating how
 
 ```json
 {
-  "STU": "company.<CompanyDrugAbbreviation>.drugs",
+  "STU": "company.example.drugs",
+  "excluded_workers": [],
   "steps": [
     {
-      "project_name": "{STU}.category",
-      "url": "https://www.example.com/categories", 
-      "type": "one-off",
-      "method": "GET",
       "data_in": {
-        "note": "Test data for configuration",
-        "data_for_test": []
+        "note": "",
+        "data_for_test": {
+          "note": ""
+        }
       },
-      "data_out": {
-        "jpath": "expression for extracting categories"
-      },
-      "interval": 86400
+     "project_name": "{STU}.category",
+      "url": "https://www.example.com/categories",
+      "type": "one-off",
+      "priority": 2,
+      "fetch_method": "direct",
+      "method": "GET",
+      "status": 1,
+      "charset": "UTF-8",
+      "charact_string_start": "",
+      "charact_string_end": "",
+      "pf_id": 1765,
+      "data_out": "",
+      "interval": 86400,
+      "excluded_workers": "{excluded_workers}"
     }
   ]
 }
+
 ```
 
 ### Considerations
