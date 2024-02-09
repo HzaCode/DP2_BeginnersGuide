@@ -2,7 +2,7 @@
 
 # Locating Data in DP2 Using XPath
 
-### Introduction
+
 
 XPath, short for XML Path Language, is a language used to locate information in XML and HTML documents. It allows for navigation through elements and attributes in a document by defining a specific path. It is an indispensable tool in data extraction , especially when precise data retrieval is needed.
 ### Basics of XPath
