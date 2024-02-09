@@ -11,7 +11,7 @@ This new tutorial provides a comprehensive guide on utilizing DP2 (DownPool Vers
 - [DP2 User Interface Overview](DP2%20User%20Interface%20Overview.md)
 - Category Step and Extract
   - [Category Step](Study：catogery_step.md)
-  - [Extracting the Category](Extracting%20the%20Category%20in%20'category_step.md')
+  - [Extracting the Category](Extracting%20the%20Category%20in%20'category_step'.md)
 - Total Page Step and Extract
   - [Total Page Step](Study：totalpage_step.md)
   - [Extract the Total Number of Pages](Extract%20the%20Total%20Number%20of%20Pages%20in%20%60totalpage_step%60.md)
