@@ -21,7 +21,7 @@ This new tutorial provides a comprehensive guide on utilizing DP2 (DownPool Vers
 - Detail Step and Extract
   - [Detail Step](Study：detail_step.md)
   - [Extracting Drug Information](Extracting%20Drug%20Information%20in%20'detail_step.md')
-- Attachment Step and Extract
+- Attachment Step
   - [Attachment Step](Study：%20attachment_step.md)
 - [API Configuration Guide in DP2](API%20Configuration%20Guide%20in%20DP2.md)
 - [Batch Processing, Deletion, and Export](Batch%20Processing%2C%20Deletion%2C%20and%20Export%20.md)
