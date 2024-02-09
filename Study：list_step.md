@@ -1,6 +1,6 @@
 # Creating a Study
 
-## Configuring List Steps (list_step)
+## Configuring List Steps (`list_step`)
 
 ### Step Description
 In this step, your goal is to extract detailed information from each product on a medical product listing page, including product name, link, description, etc. This data will be used for subsequent detailed analysis and processing. To achieve this goal, you need to configure the `list_step` step so that the system can traverse all relevant pages and extract the required data.
