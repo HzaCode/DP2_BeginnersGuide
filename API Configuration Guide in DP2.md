@@ -5,27 +5,27 @@
  **Description:**
 In the DP2 system, configuring API settings is a key step in saving extracted data to a database. This document details how to set up the API to save data to databases, including MySQL and MongoDB.
 
-### Step 1: Define the API Endpoint
+###  Define the API Endpoint
 
 Firstly, you need to define the API endpoint, which is the URL where the data will be sent. This URL should point to the API provided by your database service, used for receiving and processing data.
 
-### Step 2: Specify the Table Name
+###  Specify the Table Name
 
 The table name identifies where in the database the data will be stored. Ensure this table already exists in your database and that it has the appropriate structure to receive your data.
 
-### Step 3: Set a Unique Identifier
+###  Set a Unique Identifier
 
 A unique identifier (such as `uniqueId`) is crucial for ensuring the uniqueness of data and for updating existing records. Include this field in your API request so that the database can identify and update the corresponding record.
 
-### Step 4: Configure Data Fields
+###  Configure Data Fields
 
 Use JMESPath or jq expressions to map the extracted data fields to the corresponding fields in your database table. This step allows you to customize the data output according to the structure and needs of your database.
 
-### Step 5: Choose the Data Operation Type
+### Choose the Data Operation Type
 
 In the API request, you can select the data operation type, such as "merge" (to combine), "create" (to make a new record), or "update" (to refresh an existing one). This determines how the database will process the received data.
 
-### Step 6: Handle Attachments
+### Handle Attachments
 
 If your data includes attachments, you need to configure the API to properly handle these files. This might involve uploading the attachments to a cloud storage service and updating the corresponding file link in the database.
 
