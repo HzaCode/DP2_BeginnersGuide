@@ -1,5 +1,5 @@
 # Creating a Study
-## Extracting the Category in 'category_step'
+## Extracting the Category in `category_step` 
 
 
 **Description:**
