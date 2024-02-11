@@ -20,7 +20,7 @@ This new tutorial provides a comprehensive guide on utilizing DP2 (DownPool Vers
   - [Extract Page Information](Extract%20Page%20Information%20in%20the%20list_step%20.md)
 - Detail Step and Extract
   - [Detail Step](Study：detail_step.md)
-  - [Extracting Drug Information](Extracting%20Drug%20Information%20in%20'detail_step.md')
+  - [Extracting Drug Information](Extracting%20Drug%20Information%20in%20'detail_step'.md)
 - Attachment Step
   - [Attachment Step](Study：%20attachment_step.md)
 - [API Configuration Guide in DP2](API%20Configuration%20Guide%20in%20DP2.md)
