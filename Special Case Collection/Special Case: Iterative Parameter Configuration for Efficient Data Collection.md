@@ -2,7 +2,10 @@
 
 **Introduction**
 
-In the context of data extraction in the DP2 system, iterative parameter configuration is a critical aspect that allows for systematic navigation through multi-page data sources. This document revisits the topic, as previously detailed in the [Study:list_step](Study:list_step.md), and underscores the importance of avoiding common pitfalls that can lead to data collection errors.
+ In the context of data extraction in the DP2 system, iterative parameter configuration is a critical aspect that allows for systematic navigation through multi-page data sources. This document revisits the topic, as previously detailed in the "[list_step](../Study：list_step.md)" tutorial, and underscores the importance of avoiding common pitfalls that can lead to data collection errors.
+
+
+
 
 **Iterative Parameter Configuration**
 
