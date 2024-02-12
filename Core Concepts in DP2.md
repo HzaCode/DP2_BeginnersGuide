@@ -5,7 +5,7 @@ In the DP2 platform, the **Study** function allows users to plan and execute dat
 
 ## Step
 
-Within the research framework of the DP2 system, a **Step** is the fundamental unit that constitutes the skeleton of a study, responsible for achieving specific objectives in the data processing flow. Each step contains a series of detailed configuration information, covering key aspects such as target URLs, HTTP request methods (GET or POST), data to be submitted, and cookies configuration. In addition, steps offer highly configurable solutions for data input (Data In) and output (Data Out), supporting advanced data querying and transformation operations using JMESPath to accommodate complex data processing scenarios.
+Within the framework of the DP2 system, a **Step** is the fundamental unit that constitutes the skeleton of a study, responsible for achieving specific objectives in the data processing flow. Each step contains a series of detailed configuration information, covering key aspects such as target URLs, HTTP request methods (GET or POST), data to be submitted, and cookies configuration. In addition, steps offer highly configurable solutions for data input (Data In) and output (Data Out), supporting advanced data querying and transformation operations using JMESPath to accommodate complex data processing scenarios.
 
 ## Task
 
@@ -43,29 +43,28 @@ Considering the need to process attachments in data processing tasks, the DP2 pl
 
 To keep users informed of the latest developments in data processing, the DP2 platform supports configuring real-time data update notification mechanisms. With simple settings, users can receive email or WeChat message notifications of data updates, allowing real-time monitoring of the status and results of data processing. This mechanism provides an efficient project management and monitoring tool for users, ensuring transparency and traceability in data processing activities.
 
-To ensure consistency with the specified Markdown document style, here is the content translated into English and formatted accordingly:
 
 # Operation Process
 
 ## Creating a Study
 
-First, you need to create a study (**Study**), defining the study's name (**STU**) and steps (**steps**). The creation of a study involves setting up global variables and basic configurations for steps.
+To initiate a project within the DP2 platform, begin by establishing a study (**Study**). This involves specifying the study's name (**STU**) and outlining its operational steps (**steps**). The process of creating a study includes the configuration of global variables and the foundational settings for each step, which are critical for the subsequent data processing workflow.
 
 ## Configuring a Step
 
-Within a step, configure the **URL**, **method** (GET or POST), **data**, **cookies**, etc. These configurations determine how the crawler interacts with the target website. The step's configuration also includes how to handle **input data** (**Data In**) and **output data** (**Data Out**), as well as how to use **Jpath** for data processing.
+Each step within a study requires detailed configuration, including the **URL**, **method** (GET or POST), **data**, and **cookies** settings. These parameters are essential for determining how the system interfaces with the target web resource. Additionally, the configuration encompasses the management of **input data** (**Data In**) and **output data** (**Data Out**), alongside the application of **JMESPath** (here referred to as **Jpath** for simplicity) for effective data manipulation.
 
 ## Handling Data In and Data Out
 
-In a step, use **Data In** to receive output from the previous step, and process and output data through **Data Out**. This allows you to pass and modify data between steps, facilitating data flow and transformation.
+The **Data In** function is designed to accept data generated from preceding steps, allowing for the seamless integration and transformation of data as it progresses through the study. The processed data is then made available via **Data Out**, enabling the transfer and refinement of data across different stages of the workflow. This mechanism supports a dynamic and efficient data processing pipeline.
 
-## Using Jpath
+## Using Jpath (JMESPath)
 
-With **Jpath**, you can precisely extract the information you need from JSON data. Jpath offers a rich set of query functionalities, such as filtering, sorting, and mapping, making data processing more flexible.
+**JMESPath**, referred to here as **Jpath**, provides a powerful query language for extracting and manipulating data within JSON structures. It offers a comprehensive suite of functionalities, including filtering, sorting, and mapping operations, to facilitate precise data analysis and transformation. This tool is instrumental in enhancing the flexibility and accuracy of data processing tasks.
 
 ## Calling APIs
 
-In **Data Out**, configure API calls to send data to databases or other external systems. This ensures data storage and subsequent processing. API calls can be direct or made through DP2's API.
+The configuration for **Data Out** includes the ability to make API calls, thereby enabling the integration of processed data with databases or other external systems. This capability ensures that data is not only stored but also available for further analysis or processing. The DP2 platform accommodates both direct API interactions and those mediated through the platform's API infrastructure, providing versatile options for data dissemination.
 
 
 
