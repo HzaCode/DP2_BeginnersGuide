@@ -41,7 +41,7 @@ This configuration specifies the project name, URL pattern with dynamic placehol
        }
      }
      ```
-   - **Correct Approach**: Always set `start` to 1 to ensure the first page is included.
+  
 
 2. **Special First Page Handling**
    - **Problem Description**: If the first page has a unique URL format, not accounting for this can lead to data omission or duplication.
@@ -59,7 +59,7 @@ This configuration specifies the project name, URL pattern with dynamic placehol
        }
      }
      ```
-   - **Correct Approach**: Use the `first` parameter to specify the actual URL for the first page.
+ 
 
 3. **Hardcoded Total Page Number**
    - **Problem Description**: Assuming a fixed total number of pages (`TotalPageNum`) can lead to incomplete or excessive data collection.
@@ -73,7 +73,7 @@ This configuration specifies the project name, URL pattern with dynamic placehol
        }
      }
      ```
-   - **Correct Approach**: Dynamically determine the total number of pages to ensure all relevant data is collected.
+
 
 4. **URL Placeholder Errors**
    - **Problem Description**: Forgetting to replace placeholders in the URL pattern can prevent the scraper from accessing the correct pages.
@@ -90,7 +90,6 @@ This configuration specifies the project name, URL pattern with dynamic placehol
        }
      }
      ```
-   - **Correct Approach**: Ensure all placeholders are correctly replaced with the appropriate values.
 
 **Conclusion**
 
