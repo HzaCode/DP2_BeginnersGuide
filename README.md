@@ -3,7 +3,9 @@
 
 This new tutorial provides a comprehensive guide on utilizing DP2 (DownPool Version 2).
 
-![DP2 LOGO](image/image2.png)
+<img src="image/image2.png" alt="DP2 LOGO" width="500" style="display: block;">
+
+
 # Table of Contents
 
 - [Introduction to DP2](Introduction%20to%20DP2.md)
