@@ -5,7 +5,6 @@ This new tutorial provides a comprehensive guide on utilizing DP2 (DownPool Vers
 
 <img src="image/image2.png" alt="DP2 LOGO" width="500" style="display: block;">
 
-
 # Table of Contents
 
 - [Introduction to DP2](Introduction%20to%20DP2.md)
@@ -33,4 +32,7 @@ This new tutorial provides a comprehensive guide on utilizing DP2 (DownPool Vers
 - [jq and JMESPath in DP2](jq%20and%20JMESPath%20in%20DP2.md)
 - [Tricks and Tips for DP2](Tricks%20and%20Tips%20for%20DP2.md)
 - [Troubleshooting and Frequently Asked Questions (FAQ) in DP2](Troubleshooting%20and%20Frequently%20Asked%20Questions%20(FAQ)%20in%20DP2.md)
-
+- Special Case Collection
+  - [Special Case: Avoiding Duplicate Keys in JSON Data Structures](Special%20Case%20Collection/Special%20Case:%20Avoiding%20Duplicate%20Keys%20in%20JSON%20Data%20Structures.md)
+  - [Special Case: Iterative Parameter Configuration for Efficient Data Collection](Special%20Case%20Collection/Special%20Case:%20Iterative%20Parameter%20Configuration%20for%20Efficient%20Data%20Collection.md)
+  - [Special Case: Extracting 'category_id' from DP2 Jextor System](Special%20Case%20Collection/Special%20Case：%20Extracting%20'category_id'%20from%20DP2%20Jextor%20System.md)
