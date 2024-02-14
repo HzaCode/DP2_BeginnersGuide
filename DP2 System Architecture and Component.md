@@ -1,4 +1,4 @@
-# Core Concepts in DP2
+# DP2 System Architecture and Component
 ## Study
 
 In the DP2 platform, the **Study** function allows users to plan and execute data processing activities in a project-oriented manner. Each study instance is designed as an integrated project container, consisting of a series of well-defined steps. Each step targets a specific segment of the data processing workflow. This includes precise extraction of web content, in-depth parsing of HTML code, to extracting valuable information from complex data structures. The global variables defined in a study can be shared among steps, aiming to reduce repetitive configuration work, thereby improving the efficiency and flexibility of project execution. This design enables users to quickly adjust and optimize processing strategies for different data processing needs.
