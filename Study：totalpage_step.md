@@ -1,6 +1,6 @@
 # Creating a Study
 
-## Configuring the First Step (`totalpage_step`)
+## Configuring `totalpage_step`
 
 ### Step Description
 
