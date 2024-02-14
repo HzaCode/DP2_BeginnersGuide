@@ -8,7 +8,7 @@ This new tutorial provides a comprehensive guide on utilizing DP2 (DownPool Vers
 # Table of Contents
 
 - [Introduction to DP2](Introduction%20to%20DP2.md)
-- [Core Concepts in DP2](Core%20Concepts%20in%20DP2.md)
+- [DP2 System Architecture and Component](DP2%20System%20Architecture%20and%20Component.md)
 - [DP2 User Interface Overview](DP2%20User%20Interface%20Overview.md)
 - Category Step and Extract
   - [Category Step](Study：catogery_step.md)
