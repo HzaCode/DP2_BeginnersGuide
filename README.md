@@ -27,7 +27,6 @@ This new tutorial provides a comprehensive guide on utilizing DP2 (DownPool Vers
 - [API Configuration Guide in DP2](API%20Configuration%20Guide%20in%20DP2.md)
 - [Batch Processing, Deletion, and Export](Batch%20Processing%2C%20Deletion%2C%20and%20Export%20.md)
 - [Monitoring and Logging DP2 Activities](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Monitoring%20and%20Logging%20DP2%20Activit.md)
-
 - [Real-world Scenarios and Use Cases](Real-world%20Scenarios%20and%20Use%20Cases.md)
 - [MongoDB Query in DP2](MongoDB%20Query%20%20in%20DP2.md)
 - [XPath for DP2](XPath%20for%20DP2.md)
