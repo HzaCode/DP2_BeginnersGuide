@@ -26,7 +26,7 @@ This new tutorial provides a comprehensive guide on utilizing DP2 (DownPool Vers
   - [Attachment Step](Study：%20attachment_step.md)
 - [API Configuration Guide in DP2](API%20Configuration%20Guide%20in%20DP2.md)
 - [Batch Processing, Deletion, and Export](Batch%20Processing%2C%20Deletion%2C%20and%20Export%20.md)
-- [Examples and Best Practices with DP2](Examples%20and%20Best%20Practices%20with%20DP2.md)
+- [Real-world Scenarios and Use Cases](Real-world%20Scenarios%20and%20Use%20Cases.md)
 - [MongoDB Query in DP2](MongoDB%20Query%20%20in%20DP2.md)
 - [XPath for DP2](XPath%20for%20DP2.md)
 - [jq and JMESPath in DP2](jq%20and%20JMESPath%20in%20DP2.md)
