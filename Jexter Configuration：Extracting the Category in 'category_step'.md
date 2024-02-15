@@ -18,7 +18,7 @@ Within the DP2 system, `category_step` serves as a crucial step for extracting c
 </div>
 ```
 
-**XPath Extraction Code:**
+**Jexter Configuration:**
 ```json
 {
   "elements": {
@@ -50,7 +50,7 @@ In this example, we utilize XPath to locate the last link in the pagination list
 </div>
 ```
 
-**XPath Extraction Code:**
+**Jexter Configuration:**
 ```json
 {
   "elements": {
@@ -85,7 +85,7 @@ In this example, we extract the category ID by parsing product links, assuming t
 <div class="pageNum">10</div>
 ```
 
-**XPath Extraction Code:**
+**Jexter Configuration:**
 ```json
 {
   "elements": {
@@ -114,7 +114,7 @@ In this example, we directly extract the total number of pages from pagination t
 <div data-key="category_id">123</div>
 ```
 
-**XPath Extraction Code:**
+**Jexter Configuration:**
 ```json
 {
   "elements": {
