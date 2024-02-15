@@ -81,4 +81,4 @@ Ensure the priority of `totalpage_step` is set high to run first at the beginnin
 
 On the DP2 platform, you can test the configuration of `totalpage_step`. During the testing process, ensure that the total number of pages is correctly returned and there are no errors or exceptions. If the test results do not meet expectations, adjustments to the URL or data input configurations may be necessary.
 
-Through these detailed tutorial contents and examples, you should have a better understanding of how to configure and test `totalpage_step` in a study. Correctly configuring this step is key to ensuring the smooth progress of the entire data extraction task.
+Through these detailed tutorial contents and examples, you will gain a deeper understanding of how to configure and test the `totalpage_step` in a study. Properly setting up this step is crucial for the seamless progression of the entire data extraction task.
