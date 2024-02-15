@@ -1,8 +1,8 @@
 # Creating a Study
 
-## Configuration (detail_step) 
+## Configuring Detail Steps (`detail_step`) 
 
-In the `detail_step` phase of a Study, you focus on obtaining more in-depth information from the detailed pages corresponding to each link extracted from the list page. Correctly configuring the `detail_step` is crucial for building a complete dataset and analysis.
+In the `detail_step` of a Study, you focus on obtaining more in-depth information from the detailed pages corresponding to each link extracted from the list page. Correctly configuring the `detail_step` is crucial for building a complete dataset and analysis.
 
 ### Step Description
 
