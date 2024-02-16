@@ -9,7 +9,7 @@
 
 ### Table of Contents
 
-1. [**Introduction to DP2**](Introduction%20to%20DP2.md) - Get started with the basics of DP2.
+1. [**Introduction to DP2**](Introduction%20to%20DP2.md) - Development background of DP2 and its role in AITEP.
 2. [**DP2 System Architecture and Components**](DP2%20System%20Architecture%20and%20Component.md) - Understand the underlying architecture and components.
 3. [**DP2 User Interface Overview**](DP2%20User%20Interface%20Overview.md) - A guide to the DP2 user interface.
 4. **Steps and Extraction Guides**
