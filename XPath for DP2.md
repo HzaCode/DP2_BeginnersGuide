@@ -68,11 +68,11 @@ Configuring XPath in DP2 for data extraction typically involves specifying XPath
 {
   "elements": {
     "postTitle": {
-      "xpath": "//div[contains(@class, 'post-title')]/text()",
+      "col": "//div[contains(@class, 'post-title')]/text()",
       "type": "string"
     },
     "link": {
-      "xpath": "//a/@href",
+      "col": "//a/@href",
       "type": "string"
     }
   }
