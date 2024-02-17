@@ -1,7 +1,83 @@
 
 ### Comprehensive Example
 
-Suppose you need to extract drug names, batch numbers, descriptions, and image links from a webpage that contains a list of multiple products. We will use all the core functions of Jexter to accomplish this task.
+Suppose you need to extract drug names, batch numbers, descriptions, and image links from a webpage that contains a list of multiple drugs：
+
+
+```html
+<div class="drugs-container">
+ <div class="drug-item">
+  <h1>Medication A</h1>
+  <span class="batch-number">A-123XYZ</span>
+  <br/>
+  <span class="production-date">2023-04-01</span>
+  <br/>
+  <span class="expiration-date">2025-04-01</span>
+  <br/>
+  <a class="manufacturer-link" href="http://example.com/manufacturerA">Visit Manufacturer A</a>
+  <br/>
+  <img alt="Drug Image" src="medicationA.png"/>
+  <br/>
+  <div class="description">A revolutionary treatment for condition X, proven to reduce symptoms significantly.</div>
+  <span class="availability">In Stock</span>
+  <br/>
+  <div class="additional-info">Contact us for more information on Medication A.</div>
+ </div>
+ <div class="drug-item">
+  <h1>Medication B</h1>
+  <span class="batch-number">BATCH-456</span>
+  <br/>
+  <span class="production-date">2023-05-15</span>
+  <br/>
+  <span class="expiration-date">2025-05-15</span>
+  <br/>
+  <a class="manufacturer-link" href="http://example.com/manufacturerB">Visit Manufacturer B</a>
+  <br/>
+  <img alt="Drug Image" src="medicationB.png"/>
+  <br/>
+  <div class="description">An effective treatment for condition Y, providing relief and support.</div>
+  <span class="availability">In Stock</span>
+  <br/>
+  <div class="additional-info">Detailed info on Medication B</div>
+ </div>
+ <div class="drug-item">
+  <h1>Medication C</h1>
+  <span class="batch-number">C-789XYZ</span>
+  <br/>
+  <span class="production-date">2023-06-20</span>
+  <br/>
+  <span class="expiration-date">2026-06-20</span>
+  <br/>
+  <a class="manufacturer-link" href="http://example.com/manufacturerC">Visit Manufacturer C</a>
+  <br/>
+  <img alt="Drug Image" src="medicationC.png"/>
+  <br/>
+  <div class="description">Designed to alleviate symptoms of condition Z, with minimal side effects.</div>
+  <span class="availability">Out of Stock</span>
+  <br/>
+  <div class="additional-info">Further details on Medication C are available upon request.</div>
+ </div>
+ <div class="drug-item">
+  <h1>Medication D</h1>
+  <span class="batch-number">D-101XYZ</span>
+  <br/>
+  <span class="production-date">2023-07-30</span>
+  <br/>
+  <span class="expiration-date">2026-07-30</span>
+  <br/>
+  <a class="manufacturer-link" href="http://example.com/manufacturerD">Visit Manufacturer D</a>
+  <br/>
+  <img alt="Drug Image" src="medicationD.png"/>
+  <br/>
+  <div class="description">Designed for rapid relief of condition W, Medication D is at the forefront of medical innovation.</div>
+  <span class="availability">Out of Stock</span>
+  <br/>
+  <div class="additional-info">Discover the benefits of Medication D - inquire today.</div>
+ </div>
+</div>
+
+```
+We will use all the core functions of Jexter to accomplish this task：
 
 ```json
 {
