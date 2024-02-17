@@ -40,9 +40,7 @@ In the step configurations of DP2, the data input and output functions provide a
 
 The DP2 platform provides strong API support, allowing users to seamlessly integrate and push the results of data processing to external systems, such as various types of database systems. Moreover, DP2 also offers direct support for popular database systems (such as MySQL and MongoDB), further facilitating users' management and analysis work after data processing, enhancing the flexibility and breadth of data applications.
 
-## XPath
 
-**XPath** is a powerful tool for finding information in HTML or XML documents, precisely locating specific parts of a document through accurate path expressions. In the DP2 data processing framework, the application of XPath makes data extraction from markup documents more efficient and accurate.
 
 ## Special Table Data Processing
 
