@@ -1,8 +1,34 @@
 
 ### Comprehensive Example
 
-Suppose you need to extract drug names, batch numbers, descriptions, and image links from a webpage that contains a list of multiple drugs.
+Suppose you need to extract drug names, batch numbers, production and expiration dates, manufacturer links, availability, and additional information from a webpage that contains a list of multiple drugs, each with detailed descriptions and images：
 
+```html
+<div class="drugs-container">
+    <div class="drug-item">
+        <h1>Drug Name 1</h1>
+        <span class="batch-number">BN-1234</span>
+        <span class="production-date">01/01/2023</span>
+        <span class="expiration-date">01/01/2024</span>
+        <a class="manufacturer-link" href="http://example.com/manufacturer1">Manufacturer 1 - Pharma Inc</a>
+        <img src="http://example.com/drugs/images/drug1.jpg" />
+        <div class="description">This is a description of Drug Name 1.</div>
+        <span class="availability">In Stock</span>
+        <div class="additional-info">Contains active ingredients A, B, C.</div>
+    </div>
+    <div class="drug-item">
+        <h1>Drug Name 2</h1>
+        <span class="batch-number">BN-5678</span>
+        <span class="production-date">02/02/2023</span>
+        <span class="expiration-date">02/02/2024</span>
+        <a class="manufacturer-link" href="http://example.com/manufacturer2">Manufacturer 2 - BioHealth</a>
+        <img src="http://example.com/drugs/images/drug2.jpg" />
+        <div class="description">This is a description of Drug Name 2, with more details.</div>
+        <span class="availability">Out of Stock</span>
+        <div class="additional-info">Recommended for condition X, Y.</div>
+    </div>
+</div>
+```
 We will use all the core functions of Jexter to accomplish this task：
 
 ```json
