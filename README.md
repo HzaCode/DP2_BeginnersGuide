@@ -1,5 +1,5 @@
 # DP2 for Beginners
-## A Comprehensive Guide to DP2 (DownPool Version 2)
+ ## An Introductory Tutorial
 
 ![DP2 LOGO](image/image2.png)
 
