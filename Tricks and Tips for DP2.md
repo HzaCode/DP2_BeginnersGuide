@@ -22,3 +22,6 @@
 - **Extracting Details with Jextor**:
   - In Jextor, leverage **`TASK_extra_data`** to extract detailed information like **`category_id`**.
 
+- **Focus on NMPA Approved Drugs**:
+  Prioritize drugs approved by the NMPA, especially those with a "National Medicine Permission" number. Exclude veterinary drugs and supplements. Use the NMPA website for verification if needed to ensure data accuracy and efficiency.
+
