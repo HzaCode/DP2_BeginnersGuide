@@ -23,5 +23,7 @@
   - In Jextor, leverage **`TASK_extra_data`** to extract detailed information like **`category_id`**.
 
 - **Focus on NMPA Approved Drugs**:
-  Prioritize drugs approved by the NMPA, especially those with a "National Medicine Permission" number. Exclude veterinary drugs and supplements. Use the NMPA website for verification if needed to ensure data accuracy and efficiency.
+  - Prioritize drugs approved by the NMPA, especially those with a "National Medicine Permission" number. Exclude veterinary drugs and supplements. Use the NMPA website for verification if needed to ensure data accuracy and efficiency.
+- **Data Association**:
+  - When the project name (**`project_name`**) and URL remain the same, updates to new projects will automatically be associated with the original task (**`task`**) location.
 
