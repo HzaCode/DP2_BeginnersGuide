@@ -98,22 +98,22 @@ Here are some additional practical examples of using XPath to extract specific t
 
 ### [Extracting the Category in `category_step`：](Jexter%20Configuration：Extracting%20the%20Category%20in%20'category_step'.md)
 
-- **Locate the last pagination link (excluding "Next" and "Last"):**
-  ```xpath
-  //div[@class='w-pages']/a[not(contains(@class, 'w-page-next')) and not(contains(@class, 'w-page-last'))][last()]
-  ```
-- **Extract category ID from product link:**
-  ```xpath
-  //div[contains(@class, 'w-prd-infobox')]/h2/a/@href
-  ```
-- **Directly extract total page count from data attribute:**
-  ```xpath
-  //div[@data-key='total']
-  ```
-- **Directly extract category ID from data attribute:**
-  ```xpath
-  //div[@data-key='category_id']
-  ```
+
+- **Extracting Category Name from Parent Box Element:**
+   ```xpath
+   //div[contains(@class, 'p_parentBox')]/a/text()
+   ```
+
+- **Extracting Category Name from Form Middle Content:**
+   ```xpath
+   //div[contains(@class, 'formMiddleContent482')]//a/text()
+   ```
+
+
+- **Extracting Category Name from Web Component Menu:**
+   ```xpath
+   //div[@class='w-com-menu-in']/ul/li/div/a/text()
+   ```
 
 ### [Extract Page Information in `list_step`：](Jexter%20Configuration：Extract%20Page%20Information%20in%20the%20list_step%20.md)
 
