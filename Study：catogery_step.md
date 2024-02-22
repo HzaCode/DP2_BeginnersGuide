@@ -58,7 +58,7 @@ Below is a typical example of a `category_step` configuration, demonstrating how
 
 - **Unique Global Variables**: Ensure the value of "STU" is unique to avoid confusion with other studies in the system. This helps maintain clarity and ease of management for your project.
 
-- **Testing Configuration Before Running**: Prior to initiating your data extraction process, it's crucial to ensure the accuracy of your setup with the DP2 platform's test feature. This can be done via the "Test Configuration Parameters" section within the interface. A successful check, confirming your setup is correct and free from errors, results in the creation of a new project. Within this **test project**, you have the opportunity to fine-tune the extraction parameters by setting up the [Jexctor configuration for 'category_step'](Jexter%20Configuration%3AExtracting%20the%20Category%20in%20'category_step'.md).
+- **Testing Configuration Before Running**: Prior to initiating your data extraction process, it's crucial to ensure the accuracy of your setup with the DP2 platform's test feature. This can be done via the "Test Configuration Parameters" section within the interface. A successful check, confirming your setup is correct and free from errors, results in the creation of a new project. Within this **test project**, you have the opportunity to fine-tune the extraction parameters by setting up the [Jexctor configuration for 'category_step'](Jexter%20Configuration：Extracting%20the%20Category%20in%20'category_step'.md).
 
 
 
