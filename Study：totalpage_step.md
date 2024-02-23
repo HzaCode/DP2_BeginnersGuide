@@ -79,6 +79,4 @@ Ensure the priority of `totalpage_step` is set high to run first at the beginnin
 
 ### Testing `totalpage_step`
 
-On the DP2 platform, you can test the configuration of `totalpage_step`. During the testing process, ensure that the total number of pages is correctly returned and there are no errors or exceptions. If the test results do not meet expectations, adjustments to the URL or data input configurations may be necessary.
-
-Through these detailed tutorial contents and examples, you will gain a deeper understanding of how to configure and test the `totalpage_step` in a study. Properly setting up this step is crucial for the seamless progression of the entire data extraction task.
+On the DP2 platform, you can test the configuration of `totalpage_step`. During the [testing process](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Jexter%20Configuration%EF%BC%9AExtract%20the%20Total%20Number%20of%20Pages%20in%20%60totalpage_step%60.md), ensure that the total number of pages is correctly returned and there are no errors or exceptions. If the test results do not meet expectations, adjustments to the URL or data input configurations may be necessary.Properly setting up this step is crucial for the seamless progression of the entire data extraction task.
