@@ -76,4 +76,4 @@ In this configuration:
 - If the detailed page contains dynamically loaded content, you may need to adjust the `interval` field to give the page enough time to load all content.
 - Perform thorough testing before actual deployment to ensure the configuration is correct and error-free.
 
-By correctly configuring the `detail_step`, you can ensure that all necessary information is extracted from the detailed pages, laying a solid foundation for subsequent data processing. In practice, you should adjust the configuration according to the specific situation of the target website to ensure the accuracy and efficiency of data extraction.
+By accurately configuring the detail_step, you can ensure that in the [next phase of extraction](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Jexter%20Configuration%EF%BC%9AExtracting%20Drug%20Information%20in%20'detail_step'.md), the correct drug links are obtained, and the details of the information are [properly captured and saved](https://github.com/HzaCode/DP2-for-Beginners/blob/main/API%20Configuration%20Guide%20in%20DP2.md).
