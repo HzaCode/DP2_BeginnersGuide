@@ -80,5 +80,5 @@ Below is a sample `attachment_step` configuration based on your provided example
 
 ### Summary
 
-With this configuration, you can ensure that attachment data is correctly downloaded and saved to the database. Configuring the `attachment_step` requires precise mapping of attachment information and ensuring they are correctly associated with records in the database. Before running live, make sure all placeholders and paths are correctly set to ensure smooth uploading and storage of attachments. Additionally, do not forget to conduct testing to verify the setup works as intended and to catch any issues before they affect your data collection process.
+With this configuration, you can ensure that attachment data is correctly downloaded and saved to the database. Configuring the `attachment_step` requires [precise mapping](https://github.com/HzaCode/DP2-for-Beginners/blob/main/API%20Configuration%20Guide%20in%20DP2.md) of attachment information and ensuring they are correctly associated with records in the database. Before running live, make sure all placeholders and paths are correctly set to ensure smooth uploading and storage of attachments. Additionally, do not forget to conduct testing to verify the setup works as intended and to catch any issues before they affect your data collection process.
 
