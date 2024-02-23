@@ -213,4 +213,4 @@ This configuration locates the pagination link with the `last` class through an 
 **Explanation:**
 In this configuration, we directly extract the total number of pages from the `data-total-pages` attribute of the pagination control.
 
-These examples demonstrate various methods of extracting pagination information from different HTML structures, including direct positioning, text extraction, script parsing, URL analysis, dynamic content handling, and the utilization of specific attributes and states. In practice, you may need to adjust these configurations based on the specific structure and content of the webpage.
+These examples showcase methods to extract pagination information from diverse HTML structures, encompassing techniques like direct positioning, text extraction, script parsing, URL analysis, dynamic content management, and leveraging specific attributes and states. Adjustments might be necessary to accurately extract the total page number before constructing the dynamic URL in the  [`list_step` ](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Study%EF%BC%9Alist_step.md) , depending on the webpage's unique structure and content.
