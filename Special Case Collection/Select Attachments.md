@@ -19,8 +19,10 @@ Here is a simplified HTML page example containing the product details section, w
             <dd>
                 <img src="http://www.example.com/image1.jpg" alt="Product Image 1">
                 <img src="http://www.example.com/image2.jpg" alt="Product Image 2">
-                <dt><img src="http://www.example.com/special_image.jpg" alt="Special Image"></dt>
             </dd>
+            <dt>Special Image</dt>
+            <!-- 保持特殊图片在dt内以符合Jextor配置 -->
+            <dd><img src="http://www.example.com/special_image.jpg" alt="Special Image"></dd>
             <dt>Contact Information</dt>
             <dd>
                 <a href="tencent://message/?uin=328836088&Site=Songlu&Menu=yes">Contact Us</a>
@@ -37,6 +39,7 @@ Here is a simplified HTML page example containing the product details section, w
     </div>
 </body>
 </html>
+
 ```
 
 ### Jextor Configuration and Extraction Results
