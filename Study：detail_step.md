@@ -76,6 +76,5 @@ phase, including `dp2_id`, `product_name`, and `product_link`. Here, `12345678` 
 - Ensure that the links in `data_in` are valid and correctly point to the detailed pages.
 - In `data_out`, use placeholders (e.g., `{dp2_id}`) to represent the data extracted from the detailed page, which will be replaced by the actual data during the extraction process.
 - If the detailed page contains dynamically loaded content, you may need to adjust the `interval` field to give the page enough time to load all content.
-- Perform thorough **testing** before actual deployment to ensure the configuration is correct and error-free.
-
-By accurately configuring the detail_step, you can ensure that in the [next phase of extraction](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Jexter%20Configuration%EF%BC%9AExtracting%20Drug%20Information%20in%20'detail_step'.md), the correct drug links are obtained, and the details of the information are [properly captured and saved](https://github.com/HzaCode/DP2-for-Beginners/blob/main/API%20Configuration%20Guide%20in%20DP2.md).
+  
+Perform comprehensive **testing** of your configuration before deployment to ensure accuracy and prevent errors. Properly configuring the `detail_step` is crucial for the success of the [next extraction phase](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Jexter%20Configuration%EF%BC%9AExtracting%20Drug%20Information%20in%20'detail_step'.md), ensuring that the right drug links are extracted and their details are [accurately captured and stored](https://github.com/HzaCode/DP2-for-Beginners/blob/main/API%20Configuration%20Guide%20in%20DP2.md). 
