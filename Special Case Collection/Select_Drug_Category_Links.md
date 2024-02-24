@@ -88,4 +88,4 @@ This result is a JSON array, where each object represents a drug category. For e
 - `link`: A link to the list of drugs in that category.
 - `category_id`: The category ID extracted from the link, represented as the value of the query parameter `catid`.
 
-Through this tutorial, we demonstrated how to extract drug category information from webpages with specific HTML structures, including category names, links, and IDs. This approach can be applied to any data extraction requirement with similar structures, with a particular emphasis on link selection.
+Through this tutorial, we demonstrated how to extract drug category information from webpages with specific HTML structures,  with a particular emphasis on link selection.
