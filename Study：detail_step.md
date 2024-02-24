@@ -9,7 +9,7 @@ In the `detail_step` of a Study, you focus on obtaining more in-depth informatio
 The `detail_step` phase typically follows the [`list_step` ](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Jexter%20Configuration%EF%BC%9AExtract%20Page%20Information%20in%20the%20list_step%20.md)
  phase closely, where it is responsible for extracting specific data from the detailed page of each list item. This data may include, but is not limited to:
 
-- Product ID (`dp2_id`)
+- Task ID (`dp2_id`)
 - Company name (`company`)
 - Product name (`drug_name`)
 - Approval number (`auth_num`)
