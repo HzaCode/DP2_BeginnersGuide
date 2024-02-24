@@ -1,15 +1,13 @@
  # Special Case: Iterative Parameter Configuration 
 
-**Introduction**
-
- In the context of data extraction in the DP2 system, iterative parameter configuration is a critical aspect that allows for systematic navigation through multi-page data sources. This document revisits the topic, as previously detailed in the "[list_step](../Study：list_step.md)" tutorial, and underscores the importance of avoiding common pitfalls that can lead to data collection errors.
 
 
+Iterative parameter configuration is a critical aspect that allows for systematic navigation through multi-page data sources in the "[list_step](../Study：list_step.md)".
 
 
-**Iterative Parameter Configuration**
 
-Iterative parameters are essential for defining the scope of data collection across multiple pages. A typical configuration might include:
+
+ **A typical configuration**
 
 ```json
 {
