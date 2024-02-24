@@ -17,11 +17,10 @@ The `detail_step` phase typically follows the [`list_step` ](https://github.com/
 - Product description (`drug_reference`)
 - Attachments (`attachments`)
 
-When configuring the `detail_step`, consider the structure of the target website to ensure that the Jexter configuration can accurately locate the required data elements.
 
 ### Example Configuration
 
-Below is a typical example of a `detail_step` configuration, showing how to extract key information from a product page:
+
 
 ```json
 {
