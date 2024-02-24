@@ -3,16 +3,16 @@
 
 In this tutorial, we will delve into the basic concepts of XPath and demonstrate through practical examples how to effectively use the `Parent` configuration in Jexter settings to simplify XPath expressions, improving the efficiency and accuracy of data extraction.
 
-#### Common Forms of XPath Expressions Include:
+#### Common Forms of [XPath](XPath%20for%20DP2.md) Expressions Include:
 
 - Absolute path: A path starting from the root element, for example, `/html/body/div`.
 - Relative path: A path relative to the current element, for example, `./div/p`.
 - Wildcard: Using `*` to represent any element, for example, `/html/*/div`.
 - Conditional expression: Adding conditions with `[]`, for example, `//div[@class='example']`.
 
-#### Simplifying XPath Using Parent Configuration
+#### Simplifying XPath Using `Parent` Configuration
 
-In Jexter settings, the parent configuration allows us to define a base XPath path, which serves as the starting point for all subsequent elements. By using parent, we can avoid repeating long paths, making the configuration more concise and easier to manage.
+In Jexter settings, the `parent` configuration allows us to define a base XPath path, which serves as the starting point for all subsequent elements. By using `parent`, we can avoid repeating long paths, making the configuration more concise and easier to manage.
 
 #### Example 1: Nested Structure of Medicine Information
 
@@ -131,145 +131,19 @@ This structure separates usage instructions and warning information, but both ar
 
 #### Example 5: Multi-Functional Medicine Page
 
-**HTML Structure Example**:
+**
+
+HTML Structure Example**:
 
 ```html
 <div class="medicine-page">
-  <section class="overview">
+  <div class="overview">
     <h2>Overview</h2>
-    <p>Medicine N is used for treating...</p>
-  </section>
-  <section class="details">
-    <div class="composition">
-      <h2>Components</h2>
-      <ul>
-        <li>Component A</li>
-        <li>Component B</li>
-      </ul>
-    </div>
-    <div class="effects">
-      <h2>Effects</h2>
-      <p>Description of treatment effects...</p>
-    </div>
-  </section>
-  <section class="reviews">
-    <h2>User Reviews</h2>
-    <div class="review">...</div>
-    <!-- More reviews -->
-  </section>
-</div>
-```
-
-**Jexter Configuration**:
-
-```yaml
-parent: "//div[@class='medicine-page']/section"
-```
-
-**Explanation**:
-In this complex medicine page structure, the `parent` configuration is used to target each major `section`, including medicine overview, detailed components, effects, and user reviews. This method allows for segment-wise information extraction, suitable for content-rich pages.
-
-#### Example 6: Medicine Purchase Options and Price Comparison
-
-**HTML Structure Example**:
-
-```html
-<div class="purchase-options">
-  <table>
-    <thead>
-      <tr>
-        <th>Packaging Specification</th>
-        <th>Price</th>
-        <th>Supplier</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>10 tablets/box</td>
-        <td>¥50</td>
-        <td>Supplier A</td>
-      </tr>
-      <!-- More options -->
-    </tbody>
-  </table>
-</div>
-```
-
-**Jexter Configuration**:
-
-```yaml
-parent: "//div[@class='purchase-options']/table/tbody"
-```
-
-**Explanation**:
-This example uses the `parent` configuration to target different purchase options for the medicine, particularly suitable for extracting data from tables, such as price comparisons, packaging specifications, etc.
-
-#### Example 7: Medicine Storage Conditions and Shelf Life
-
-**HTML Structure Example**:
-
-```html
-<div class="storage-info">
-  <h3>Storage Conditions</h3>
-  <p>Store in a cool, dry place, away from direct sunlight.</p>
-  <h3>Shelf Life</h3>
-  <p>24 months</p>
-</div>
-```
-
-
-
-**Jexter Configuration**:
-
-```yaml
-parent: "//div[@class='storage-info']"
-```
-
-**Explanation**:
-Using the `parent` configuration for medicine storage conditions and shelf life information helps extract key storage requirements and expiration date information, crucial for ensuring safe use of the medicine.
-
-#### Example 8: Medicine Indications and Contraindications
-
-**HTML Structure Example**:
-
-```html
-<div class="indication-contra">
-  <section class="indication">
-    <h4>Indications</h4>
-    <p>Used for treating...</p>
-  </section>
-  <section class="contraindications">
-    <h4>Contraindications</h4>
-    <ul>
-      <li>Not for pregnant women</li>
-      <li>Not for patients with heart disease</li>
-    </ul>
-  </section>
-</div>
-```
-
-**Jexter Configuration**:
-
-```yaml
-parent: "//div[@class='indication-contra']/section"
-```
-
-**Explanation**:
-This example shows how to separately locate and extract information on medicine indications and contraindications, important for medical professionals and consumers to understand the significance and restrictions of medicine use.
-
-#### Example 9: Medicine Ratings and Institutional Certification
-
-**HTML Structure Example**:
-
-```html
-<div class="ratings-certifications">
-  <div class="ratings">
-    <h5>User Ratings</h5>
-    <p>4.5/5 stars</p>
+    <p>General information about the medicine</p>
   </div>
-  <div class="certifications">
-    <h5>Certifications</h5>
-    <img src="certified.png" alt="Institutional Certification">
+  <div class="details">
+    <h2>Details</h2>
+    <!-- Sub-sections for components, effects, etc. -->
   </div>
 </div>
 ```
@@ -277,37 +151,12 @@ This example shows how to separately locate and extract information on medicine 
 **Jexter Configuration**:
 
 ```yaml
-parent: "//div[@class='ratings-certifications']/div"
+parent: "//div[@class='medicine-page']/div[@class='overview'] | //div[@class='medicine-page']/div[@class='details']"
 ```
 
 **Explanation**:
-In this example, the `parent` configuration is used to extract information on medicine user ratings and institutional certifications obtained, crucial for establishing consumer trust and assurance of medicine quality.
+In this final example, the page is divided into an overview section and a detailed information section. The `parent` configuration enables the extraction of both general and detailed information about the medicine without redundant path specifications.
 
-#### Example 10: Medicine-Related Research and Literature References
+#### Conclusion
 
-**HTML Structure Example**:
-
-```html
-<div class="research-literature">
-  <h6>Related Research</h6>
-  <ul>
-    <li>
-      <a href="study1.pdf">Research Report 1</a>
-    </li>
-    <li>
-      <a href="study2.pdf">Research Report 2</a>
-    </li>
-  </ul>
-</div>
-```
-
-**Jexter Configuration**:
-
-```yaml
-parent: "//div[@class='research-literature']/ul"
-```
-
-**Explanation**:
-This example leverages the `parent` configuration to extract links to medicine-related research and literature, providing important resources for users conducting academic research or seeking in-depth understanding of the medicine background.
-
-Through these examples, we've shown how the parent configuration simplifies and improves data extraction for various webpage structures. By setting a base XPath, it reduces redundancy and increases extraction accuracy, making the data collection process more efficient and manageable, especially for complex or extensive webpages.
+Using the `parent` configuration in Jexter settings not only simplifies XPath expressions but also enhances the structure and readability of your data extraction setup. By effectively leveraging this feature, you can streamline the extraction process, making it more efficient and adaptable to complex HTML structures.
