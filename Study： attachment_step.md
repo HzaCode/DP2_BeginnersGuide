@@ -30,7 +30,7 @@ Specify the database URL, table name, unique identifier (`where`), and the data 
 
 ### Sample Configuration
 
-Below is a sample `attachment_step` configuration based on your provided example:
+Below is a sample attachment_step configuration for reference:
 
 ```json
 {
