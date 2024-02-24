@@ -12,7 +12,7 @@ When configuring the URL for `totalpage_step` on the DP2 platform, ensure that t
 
 ### Data Input (`data_in`)
 
-`totalpage_step` might not require data input from a previous step, especially when it is the first step in the study flow. In such cases, `data_in` can be empty for testing. Here are some examples:
+`totalpage_step` might not require data input from a previous step, especially when it is the first step in the study flow. In such cases, `data_in` can be empty for testing. Below are examples to illustrate both situations:
 
 **Example 1: No Previous Step Output**
 
