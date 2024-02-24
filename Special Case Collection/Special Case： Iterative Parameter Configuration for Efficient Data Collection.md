@@ -1,4 +1,4 @@
- # Special Case: Iterative Parameter Configuration for Efficient Data Collection
+ # Special Case: Iterative Parameter Configuration 
 
 **Introduction**
 
