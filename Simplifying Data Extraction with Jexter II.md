@@ -131,9 +131,7 @@ This structure separates usage instructions and warning information, but both ar
 
 #### Example 5: Multi-Functional Medicine Page
 
-**
-
-HTML Structure Example**:
+**HTML Structure Example**:
 
 ```html
 <div class="medicine-page">
