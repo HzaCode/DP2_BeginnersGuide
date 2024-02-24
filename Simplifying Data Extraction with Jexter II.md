@@ -1,7 +1,7 @@
 
 # Simplifying Data Extraction with Jexter：`Parent`
 
-In this tutorial, we will delve into the basic concepts of XPath and demonstrate through practical examples how to effectively use the parent configuration in Jexter settings to simplify XPath expressions, improving the efficiency and accuracy of data extraction.
+In this tutorial, we will delve into the basic concepts of XPath and demonstrate through practical examples how to effectively use the `Parent` configuration in Jexter settings to simplify XPath expressions, improving the efficiency and accuracy of data extraction.
 
 #### Common Forms of XPath Expressions Include:
 
