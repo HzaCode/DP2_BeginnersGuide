@@ -11,6 +11,9 @@ In the DP2 platform, the **Study** function allows users to plan and execute dat
 ## Step
 
 Within the framework of the DP2 system, a **Step** is the fundamental unit that constitutes the skeleton of a study, responsible for achieving specific objectives in the data processing flow. Each step contains a series of detailed configuration information, covering key aspects such as target URLs, HTTP request methods (GET or POST), data to be submitted, and cookies configuration. In addition, steps offer highly configurable solutions for data input ([Data In](Understanding%20Data%20Flow%20and%20Task%20Management.md)) and output ([Data Out](Understanding%20Data%20Flow%20and%20Task%20Management.md)), supporting advanced data querying and transformation operations using [JMESPath](jq%20and%20JMESPath%20in%20DP2.md) to accommodate complex data processing scenarios.
+## Project
+In the DP2 platform, a **Project** is organized by a specific **project_name**, reflecting a series of data processing activities defined by **Steps**. Multiple **Tasks** under each **Project** execute a consistent set of operations, ensuring process uniformity and efficiency. All **Tasks** under the same **project_name** facilitate centralized management and search, making the execution and monitoring of **Projects** related to specific **Steps** more efficient.
+
 
 ## Task
 
