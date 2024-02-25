@@ -6,7 +6,7 @@ In the DP2 platform, the **Study** function allows users to plan and execute dat
 
 ## Jexter
 
-**Jexter** serves as the parsing engine within the DP2 platform, designed for structured data extraction from web pages. It utilizes [XPath](XPath%20for%20DP2.md), [jq](jq%20and%20JMESPath%20in%20DP2.md), and [JMESPath](jq%20and%20JMESPath%20in%20DP2.md), enabling a broad spectrum of data extraction techniques alongside tools for efficient web content retrieval. Jexter supports extensive data transformation capabilities and various output formats, providing a robust foundation for the data processing activities planned and executed in [Study](Study:list_step.md), ensuring its compatibility and integration within the DP2 system.
+**Jexter** serves as the parsing engine within the DP2 platform, designed for structured data extraction from web pages. It utilizes [XPath](XPath%20for%20DP2.md), [jq](jq%20and%20JMESPath%20in%20DP2.md), and [JMESPath](jq%20and%20JMESPath%20in%20DP2.md), enabling a broad spectrum of data extraction techniques alongside tools for efficient web content retrieval. Jexter supports extensive data transformation capabilities and various output formats, providing a robust foundation for the data processing activities planned and executed in **Study** .
 
 ## Step
 
