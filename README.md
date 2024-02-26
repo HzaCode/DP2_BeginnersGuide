@@ -39,7 +39,7 @@
     - [Extracting 'category_id' from DP2 Jextor System](Special%20Case%20Collection/Special%20Case：%20Extracting%20'category_id'%20from%20DP2%20Jextor%20System.md)
 
 
-This guide aims to provide a structured approach to navigate through the features and functionalities of DP2, enhancing your understanding and efficiency in using the system for your data processing needs.
+We hope this guide serves as a helpful starting point for those new to DP2,and provides the foundational knowledge needed to navigate its intricacies. 
 
 
 
