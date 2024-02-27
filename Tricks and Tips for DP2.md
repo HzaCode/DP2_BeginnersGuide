@@ -27,3 +27,5 @@
 - **Data Association**:
   - When the project name (**`project_name`**) and URL remain the same, updates to new projects will automatically be associated with the original task (**`task`**) location.
 - When you click on the configuration window in Jextor, the content you see will be `push`ed to the next `step` and displayed in `dataout`. `Save the JSON` if needed.
+- In the case of pharmaceutical product information leaflets, please ensure to directly extract and append them to the `attachment` field.
+
