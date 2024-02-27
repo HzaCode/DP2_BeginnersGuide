@@ -26,4 +26,4 @@
   - Prioritize drugs approved by the NMPA, especially those with a "National Medicine Permission" number. Exclude veterinary drugs and supplements. Use the NMPA website for verification if needed to ensure data accuracy and efficiency.
 - **Data Association**:
   - When the project name (**`project_name`**) and URL remain the same, updates to new projects will automatically be associated with the original task (**`task`**) location.
-
+- When you click on the configuration window in Jextor, the content you see will be `push`ed to the next `step` and displayed in `dataout`. `Save the JSON` if needed.
