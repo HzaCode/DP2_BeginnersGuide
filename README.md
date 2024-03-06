@@ -23,7 +23,7 @@
 7.  [**Understanding Data Flow and Task Management**](Understanding%20Data%20Flow%20and%20Task%20Management.md) - Insights into managing data flow and tasks in DP2.
 8. [**Monitoring and Logging DP2 Activities**](Monitoring%20and%20Logging%20DP2%20Activit.md) - Keep track of system activities for better management.
 9. [**Real-world Scenarios and Use Cases**](Real-world%20Scenarios%20and%20Use%20Cases.md) - Explore how DP2 can be applied in various scenarios.
-10. [**MongoDB Query in DP2**](MongoDB%20Query%20%20in%20DP2.md) - Utilize MongoDB for data querying in DP2.
+10. [**MongoDB Query n DP2**](MongoDB%20Query%20%20in%20DP2.md) - Utilize MongoDB for data querying in DP2.
 11. **Simplifying Data Extraction with Jexter**
     - [Part I](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Simplifying%20Data%20Extraction%20with%20Jexter%20Ⅰ.md)
     - [Part II](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Simplifying%20Data%20Extraction%20with%20Jexter%20II.md)
