@@ -31,4 +31,98 @@ Within the defined **elements**, data extraction and processing follow this orde
 - **must_match**: Ensures only data that meets specific criteria is included in the final results during the data row extraction phase.
 - **prefix** and **postfix**: Used to add formatting content before or after the final extracted text, such as adding a domain prefix to links or appending parameter suffixes.
 
-Below, we will illustrate these concepts of order with specific examples.
+Below, we will demonstrate how to employ Jextor's various functions in a sequential and layered manner to achieve precise and clean data extraction results.
+
+#### HTML Source Example
+
+```html
+<div id="drug-details">
+  <h1>Acetaminophen</h1>
+  <p>Active ingredient: Paracetamol</p>
+  <p>Dosage: 500mg, twice daily</p>
+  <p>Manufacturer: Pharma Inc., since 1992</p>
+  <p>Certification: <strong>Approved</strong> by Health Authority</p>
+  <img src="acetaminophen.png" alt="Acetaminophen image">
+  <a href="/more-info" class="external">More Info</a>
+</div>
+```
+
+####  Jextor Configuration and Execution Order
+
+1. **Parent Selection**
+
+   To focus our extraction on the relevant section, we define a parent node that encompasses all the drug information:
+
+   ```json
+   "parent": "//*[@id='drug-details']"
+   ```
+
+2. **Element Extraction and Processing Order**
+
+   Within this context, we outline a series of specific extraction rules. These rules not only identify what data to extract but also how to clean, transform, and format it to meet our requirements:
+
+   ```json
+   "elements": {
+     "drug_name": {
+       "col": "./h1"
+     },
+     "active_ingredient": {
+       "col": "./p[contains(text(), 'Active ingredient')]",
+       "regexp": "Active ingredient: (.+)"
+     },
+     "dosage": {
+       "col": "./p[contains(text(), 'Dosage')]",
+       "function": {
+         "regexp": "Dosage: ([\\dmg]+), ([a-zA-Z ]+)",
+         "return": ["$1 taken $2"],
+         "type": "string"
+       }
+     },
+     "manufacturer": {
+       "col": "./p[contains(text(), 'Manufacturer')]",
+       "regexp": "Manufacturer: (.+), since [\\d]+",
+       "callback": "trim"
+     },
+     "certification": {
+       "col": "./p/strong",
+       "callback": "extract_text"
+     },
+     "image_url": {
+       "col": "./img/@src",
+       "prefix": "https://example.com/images/",
+       "default": {
+         "text": "https://example.com/images/default.png"
+       }
+     }
+   
+   }
+   ```
+
+3. **Data Out Manipulation**
+
+
+ ```json
+  "data_out": {
+  "jq": "map_values(if . == null then \"N/A\" else . end)"
+}
+```
+
+#### Expected JSON Output
+
+The application of the specified Jextor configuration to our HTML source should yield a JSON object like this:
+
+```json
+{
+  "drug_name": "Acetaminophen",
+  "active_ingredient": "Paracetamol",
+  "dosage": "500mg taken twice daily",
+  "manufacturer": "Pharma Inc.",
+  "certification": "Approved",
+  "image_url": "https://example.com/images/acetaminophen.png",
+}
+
+```
+
+
+
+This section integrates and emphasizes the sequential application of Jextor's extraction and processing functions, providing a structured approach to handling complex data extraction needs. Through the comprehensive scenario, we've demonstrated the utility of `parent` for scope limitation, `elements` for data selection and extraction, and `data_out` for final data manipulation. This approach allows for the efficient and precise capture of structured data from HTML sources, showcasing the depth of customization and control offered by Jextor within DP2.
