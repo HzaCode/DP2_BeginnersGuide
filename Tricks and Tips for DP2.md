@@ -30,3 +30,5 @@
   - In Jextor, when you click on the configuration window, the content you see will be **`push`** ed to the next **`step`** and displayed in **`dataout`**. If needed, remember to **`Save the JSON`**. The test **`parse`** of each **`step`** is very important, so that the **`default`** parsing mechanism of Jextor is not used during the **`push`**.
 - **Handling Pharmaceutical Product Information Leaflets**:
   - In the case of pharmaceutical product information leaflets, please ensure to directly extract and append them to the **`attachment`** field.
+- **Multiple Link Handling for Data Input**:
+  - When faced with the need to process multiple links, structure them as an array in the **`data_in`** field. This approach facilitates the generation of multiple next steps, each corresponding to a unique link in the array. 
