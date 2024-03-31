@@ -21,7 +21,7 @@ Here is a simplified HTML page example containing the product details section, w
                 <img src="http://www.example.com/image2.jpg" alt="Product Image 2">
             </dd>
             <dt>Special Image</dt>
-            <!-- 保持特殊图片在dt内以符合Jextor配置 -->
+        
             <dd><img src="http://www.example.com/special_image.jpg" alt="Special Image"></dd>
             <dt>Contact Information</dt>
             <dd>
