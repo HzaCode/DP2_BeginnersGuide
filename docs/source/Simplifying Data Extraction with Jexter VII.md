@@ -95,4 +95,4 @@ If the primary path fails to extract data, the expected result from the alternat
 
 ```
 
-To enhance the data extraction process's flexibility and robustness, especially for web pages with variable structures, utilizing these features is highly beneficial. It is critically important to ensure that  `default` configurations are [free from duplicate keys](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Special%20Case%20Collection/Special%20Case%EF%BC%9A%20Avoiding%20Duplicate%20Keys%20in%20JSON%20Data%20Structures.md).
+To enhance the data extraction process's flexibility and robustness, especially for web pages with variable structures, utilizing these features is highly beneficial. It is critically important to ensure that  `default` configurations are [free from duplicate keys](Special%20Case：%20Avoiding%20Duplicate%20Keys%20in%20JSON%20Data%20Structures.md).

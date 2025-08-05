@@ -2,7 +2,7 @@
 
 ## Study
 
-In the DP2 platform, the **Study** function allows users to plan and execute data processing activities in a project-oriented manner. Each study instance is designed as an integrated project container, consisting of a series of well-defined steps. Each step targets a specific segment of the data processing workflow. The global variables defined in a [study](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Study%EF%BC%9Acatogery_step.md) can be shared among steps, aiming to reduce repetitive configuration work, thereby improving the efficiency and flexibility of project execution. This design enables users to quickly adjust and optimize processing strategies for different data processing needs.
+In the DP2 platform, the **Study** function allows users to plan and execute data processing activities in a project-oriented manner. Each study instance is designed as an integrated project container, consisting of a series of well-defined steps. Each step targets a specific segment of the data processing workflow. The global variables defined in a [study](Study：catogery_step.md) can be shared among steps, aiming to reduce repetitive configuration work, thereby improving the efficiency and flexibility of project execution. This design enables users to quickly adjust and optimize processing strategies for different data processing needs.
 
 ## Jexter
 
@@ -10,7 +10,7 @@ In the DP2 platform, the **Study** function allows users to plan and execute dat
 
 ## Step
 
-Within the framework of the DP2 system, a **Step** is the fundamental unit that constitutes the skeleton of a study, responsible for achieving specific objectives in the data processing flow. Each step contains a series of detailed configuration information, covering key aspects such as target URLs, HTTP request methods (GET or [POST](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Configuring%20POST%20Requests%20in%20DP2.md)
+Within the framework of the DP2 system, a **Step** is the fundamental unit that constitutes the skeleton of a study, responsible for achieving specific objectives in the data processing flow. Each step contains a series of detailed configuration information, covering key aspects such as target URLs, HTTP request methods (GET or [POST](Configuring%20POST%20Requests%20in%20DP2.md)
 ), data to be submitted, and cookies configuration. In addition, steps offer highly configurable solutions for data input ([Data In](Understanding%20Data%20Flow%20and%20Task%20Management.md)) and output ([Data Out](Understanding%20Data%20Flow%20and%20Task%20Management.md)), supporting advanced data querying and transformation operations using [JMESPath](jq%20and%20JMESPath%20in%20DP2.md) to accommodate complex data processing scenarios.
 ## Project
 In the DP2 platform, a **Project** is organized by a specific **project_name**, reflecting a series of data processing activities defined by **Steps**. Multiple **Tasks** under each **Project** execute a consistent set of operations, ensuring process uniformity and efficiency. All **Tasks** under the same **project_name** facilitate centralized management and search, making the execution and monitoring of **Projects** related to specific **Steps** more efficient.
@@ -23,12 +23,12 @@ In the DP2 platform, a **Task** refers to an operational instance defined by ste
 ## Elements
 
 
-In the Jexter system, **[Elements](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Simplifying%20Data%20Extraction%20with%20Jexter%20III%20.md)** refer to the configuration section that specifies which data to extract from web pages and how to extract it. Each element defines a data field, including its name and the rules or paths required to extract that data. These rules often utilize [XPath](XPath%20for%20DP2.md) expressions to precisely locate specific content on a web page, but can also include other processing instructions such as regular expression matching, text processing functions, etc., to accommodate complex data extraction needs.
+In the Jexter system, **[Elements](Simplifying%20Data%20Extraction%20with%20Jexter%20III%20.md)** refer to the configuration section that specifies which data to extract from web pages and how to extract it. Each element defines a data field, including its name and the rules or paths required to extract that data. These rules often utilize [XPath](XPath%20for%20DP2.md) expressions to precisely locate specific content on a web page, but can also include other processing instructions such as regular expression matching, text processing functions, etc., to accommodate complex data extraction needs.
 
 
 ## Worker Node
 
-Worker nodes are the execution units within the DP2 data processing architecture, which can be built on physical servers or cloud-based virtual machines. By adopting a distributed technological architecture, DP2 efficiently distributes tasks across multiple worker nodes, significantly enhancing the speed and overall efficiency of data processing. This design ensures the system can handle large-scale data requests, guaranteeing high parallelism and quick response in [task processing](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Understanding%20Data%20Flow%20and%20Task%20Management.md)
+Worker nodes are the execution units within the DP2 data processing architecture, which can be built on physical servers or cloud-based virtual machines. By adopting a distributed technological architecture, DP2 efficiently distributes tasks across multiple worker nodes, significantly enhancing the speed and overall efficiency of data processing. This design ensures the system can handle large-scale data requests, guaranteeing high parallelism and quick response in [task processing](Understanding%20Data%20Flow%20and%20Task%20Management.md)
 .
 
 ## Data Input (Data In) & Data Output (Data Out)

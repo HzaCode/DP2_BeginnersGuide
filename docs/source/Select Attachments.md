@@ -1,6 +1,6 @@
 #   Select Attachments
 
-In this tutorial, we'll  demonstrate how to effectively use Jextor for HTML attachments data extraction. This process is briefly introduced in our [DP2 for Beginners](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Jexter%20Configuration%EF%BC%9AExtracting%20Drug%20Information%20in%20'detail_step'.md) guide, especially for extracting detailed information from HTML. 
+In this tutorial, we'll  demonstrate how to effectively use Jextor for HTML attachments data extraction. This process is briefly introduced in our [DP2 for Beginners](Jexter%20Configuration：Extracting%20Drug%20Information%20in%20'detail_step'.md) guide, especially for extracting detailed information from HTML. 
 
 Here is a simplified HTML page example containing the product details section, which includes images, contact information, the official website link, and the company logo.
 

@@ -6,7 +6,7 @@ In the `detail_step` of a Study, you focus on obtaining more in-depth informatio
 
 ### Step Description
 
-The `detail_step` phase typically follows the [`list_step` ](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Jexter%20Configuration%EF%BC%9AExtract%20Page%20Information%20in%20the%20list_step%20.md)
+The `detail_step` phase typically follows the [`list_step` ](Jexter%20Configuration：Extract%20Page%20Information%20in%20the%20list_step%20.md)
  phase closely, where it is responsible for extracting specific data from the detailed page of each list item. This data may include, but is not limited to:
 
 - Task ID (`dp2_id`)
@@ -62,7 +62,7 @@ The `detail_step` phase typically follows the [`list_step` ](https://github.com/
 
 In this configuration:
 
-- `data_in` contains the product information passed from the [`list_step` ](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Jexter%20Configuration%EF%BC%9AExtract%20Page%20Information%20in%20the%20list_step%20.md)
+- `data_in` contains the product information passed from the [`list_step` ](Jexter%20Configuration：Extract%20Page%20Information%20in%20the%20list_step%20.md)
 phase, including `dp2_id`, `product_name`, and `product_link`. Here, `12345678` is used as an example `dp2_id`, "Example Medication Name" as the product name, and `https://www.examplepharm.com/product-detail?id=12345` as the product link.
 - `project_name` defines the name of the current Study, here using `examplepharm.drugs.detail` as an example.
 - The `url` field uses the `{product_link}` placeholder, representing the URL of the detailed page.
@@ -76,4 +76,4 @@ phase, including `dp2_id`, `product_name`, and `product_link`. Here, `12345678` 
 - In `data_out`, use placeholders (e.g., `{dp2_id}`) to represent the data extracted from the detailed page, which will be replaced by the actual data during the extraction process.
 - If the detailed page contains dynamically loaded content, you may need to adjust the `interval` field to give the page enough time to load all content.
   
-Perform comprehensive **testing** of your configuration before deployment to ensure accuracy and prevent errors. Properly configuring the `detail_step` is crucial for the success of the [next extraction phase](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Jexter%20Configuration%EF%BC%9AExtracting%20Drug%20Information%20in%20'detail_step'.md), ensuring that the right drug links are extracted and their details are [accurately captured and stored](https://github.com/HzaCode/DP2-for-Beginners/blob/main/API%20Configuration%20Guide%20in%20DP2.md). 
+Perform comprehensive **testing** of your configuration before deployment to ensure accuracy and prevent errors. Properly configuring the `detail_step` is crucial for the success of the [next extraction phase](Jexter%20Configuration：Extracting%20Drug%20Information%20in%20'detail_step'.md), ensuring that the right drug links are extracted and their details are [accurately captured and stored](API%20Configuration%20Guide%20in%20DP2.md). 

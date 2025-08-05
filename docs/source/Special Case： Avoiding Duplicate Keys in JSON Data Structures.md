@@ -1,6 +1,6 @@
 # Special Cases: Avoiding Duplicate Keys
 
-When configuring [Jexter](https://github.com/HzaCode/DP2-for-Beginners/blob/main/Jexter%20Configuration%EF%BC%9AExtracting%20Drug%20Information%20in%20'detail_step'.md)
+When configuring [Jexter](Jexter%20Configuration：Extracting%20Drug%20Information%20in%20'detail_step'.md)
 , correctly representing complex data relationships is crucial. This not only helps maintain data consistency and readability but also avoids potential data loss issues. This tutorial will illustrate how to avoid using duplicate key names through a specific example, demonstrating the correct method of representing data using nested structures and the `default` key.
 
 ## Common Issue: Using Duplicate Key Names
