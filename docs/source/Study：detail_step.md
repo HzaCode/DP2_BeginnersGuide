@@ -1,4 +1,4 @@
-# Creating a Study
+# Step Configuration ④ - Detail Step
 
 ## Configuring Detail Steps (`detail_step`) 
 

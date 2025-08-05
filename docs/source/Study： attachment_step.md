@@ -1,4 +1,4 @@
-# Creating a Study
+# Step Configuration ⑤ - Attachment Step
 ## Configuring the Attachment Handling Step (`attachment_step`)
 
 **Description:**

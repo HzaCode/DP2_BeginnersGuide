@@ -1,4 +1,4 @@
-# Creating a Study
+# Step Configuration ② - Total Page Step
 
 ## Configuring `totalpage_step`
 

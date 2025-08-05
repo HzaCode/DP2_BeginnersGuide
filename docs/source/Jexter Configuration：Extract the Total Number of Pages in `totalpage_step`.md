@@ -1,4 +1,4 @@
- # Creating a Study
+ # Jexter Configuration - Get Total Pages
 
 ## Using Jexter to Extract the Total Number of Pages in `totalpage_step`
 **Description:**

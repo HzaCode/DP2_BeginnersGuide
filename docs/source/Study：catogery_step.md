@@ -1,4 +1,4 @@
- # Creating a Study
+ # Step Configuration ① - Category Step
 ## Configuring `category_step`
 ### Step Description
 Configuring the `category_step` in the DP2 system is the initial phase in the data extraction process, aimed at gathering category information from a website's category page. This step is crucial for laying the groundwork for subsequent extraction phases, such as retrieving data from list pages. Typically, this configuration requires only a single URL because the category page is often a static webpage that houses links to all categories. This process ensures a structured approach to data extraction by systematically categorizing and accessing the website's content through its category structure.

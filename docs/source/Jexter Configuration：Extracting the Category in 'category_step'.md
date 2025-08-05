@@ -1,4 +1,4 @@
-# Creating a Study
+# Jexter Configuration - Extract Category Information
 ## Extracting the Category in `category_step` 
 
 

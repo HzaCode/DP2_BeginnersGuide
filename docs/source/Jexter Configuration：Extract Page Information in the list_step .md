@@ -1,4 +1,4 @@
-# Creating a Study
+# Jexter Configuration - Extract List Page Information
 
 ## Extract Page Information in the `list_step` 
 

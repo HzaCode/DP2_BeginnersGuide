@@ -1,4 +1,4 @@
-# Creating a Study
+# Step Configuration ③ - List Step
 
 ## Configuring List Steps (`list_step`)
 
