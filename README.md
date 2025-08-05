@@ -1,7 +1,8 @@
 <div align="center">
 <br/>
 
-<img src="image/image2.png" alt="DP2" width="300" style="border-radius: 16px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); border: 1px solid #f0f0f0;"/>
+<img src="image/image2_rounded.png" alt="DP2 Logo" width="300"/>
+
 
 <br/>
 <br/>
