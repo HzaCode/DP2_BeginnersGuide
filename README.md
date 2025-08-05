@@ -1,6 +1,6 @@
 # DP2 Beginner's Guide
 
-[![Documentation Status](https://img.shields.io/badge/docs-available-brightgreen.svg)](./docs/build/index.html)
+[![Documentation Status](https://img.shields.io/badge/docs-available-brightgreen.svg)](http://hezhiang.com/DP2_BeginnersGuide/)
 
 <div align="center">
 
@@ -14,7 +14,7 @@
 
 ## 📖 Online Documentation
 
-### 🚀 **[Click Here to View Full Documentation](./docs/build/index.html)**
+### 🚀 **[Click Here to View Full Documentation](http://hezhiang.com/DP2_BeginnersGuide/)**
 
 ---
 
@@ -38,4 +38,4 @@ This guide covers all core functions of DP2:
 
 **🌟 Ready to master DP2? Start your data collection learning journey now!**
 
-**[📖 Read Documentation Now](./docs/build/index.html)**
+**[📖 Read Documentation Now](http://hezhiang.com/DP2_BeginnersGuide/)**
