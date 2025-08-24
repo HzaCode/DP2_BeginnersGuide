@@ -141,3 +141,16 @@ Let DP2 Power Your Data Journey
 <br/>
 
 </div>
+
+
+
+
+<br/>
+<br/>
+<br/>
+
+<br/>
+<br/>
+<br/>
+<p><small><em>DP2 is a core module of the <a href="https://github.com/HzaCode/AITEP">AITEP Project</a>.</em></small></p>
+
