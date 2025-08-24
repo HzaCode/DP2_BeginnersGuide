@@ -51,19 +51,19 @@ JMESPath is a query language that allows you to extract information from JSON da
    Filter all objects where `value` is greater than 80:
 
    ```
-   data[] | [?value > 80]
+   data[?value > `80`]
    ```
 
    This returns an array of objects that meet the condition.
 
 3. **Aggregation Query**:
-   Perform aggregation operations, such as grouping by `category` and calculating the sum:
+   Perform aggregation operations, such as calculating the sum of all values:
 
    ```
-   data[] | group_by(.category) | {category: keys[0], total: sum(.value)}
+   sum(data[].value)
    ```
 
-   This returns an object containing each `category` and its corresponding sum.
+   This returns the sum of all `value` fields in the data array.
 
 ### Combining jq and JMESPath
 
@@ -102,7 +102,7 @@ Suppose you have a JSON string and you want to extract all objects where `value`
            "type": "string"
          },
          "data_out": {
-           "jq": "fromjson | [?.value > 80] | {name: .name, discounted_value: .value * 0.8}"
+           "jq": "fromjson | map(select(.value > 80)) | map({name: .name, discounted_value: (.value * 0.8)})"
          }
        }
      }

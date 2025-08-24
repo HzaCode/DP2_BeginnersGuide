@@ -9,7 +9,7 @@ In JSON and similar data structures, key names should be unique. If an object co
 
 
 
-Consider the following Jextor configuration, which attempts to specify alternative query paths by reusing the `default` key:
+Consider the following Jexter configuration, which attempts to specify alternative query paths by reusing the `default` key:
 
 ```json
 {
@@ -54,4 +54,4 @@ Through this method of multiple nesting, we clearly define a main path and two l
 
 ## Conclusion
 
-When designing and maintaining Jextor configurations, avoiding duplicate key names is very important. By using nested structures and maintaining the uniqueness of key names at each level, we can clearly and logically represent complex data relationships, while avoiding data loss and configuration errors.
+When designing and maintaining Jexter configurations, avoiding duplicate key names is very important. By using nested structures and maintaining the uniqueness of key names at each level, we can clearly and logically represent complex data relationships, while avoiding data loss and configuration errors.

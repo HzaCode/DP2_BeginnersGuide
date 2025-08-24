@@ -1,5 +1,5 @@
 #  Select Drug Category Links
-This tutorial will demonstrate how to use Jextor configurations to handle specific HTML structures, with a particular emphasis on selecting links. This process is basically introduced in our [DP2 for Beginners](Jexter%20Configuration：Extracting%20the%20Category%20in%20'category_step'.md) guide, while in this tutorial, we will explore a special case, namely how to filter links.
+This tutorial will demonstrate how to use Jexter configurations to handle specific HTML structures, with a particular emphasis on selecting links. This process is basically introduced in our [DP2 for Beginners](Jexter%20Configuration：Extracting%20the%20Category%20in%20'category_step'.md) guide, while in this tutorial, we will explore a special case, namely how to filter links.
 
 
 

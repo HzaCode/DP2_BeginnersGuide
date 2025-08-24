@@ -1,6 +1,6 @@
 
 # `prefix`, `postfix`, and `default`
-When extracting data from web pages, it's often necessary to format the extracted data or ensure the flexibility and robustness of the data extraction process. Jextor offers several practical features such as `prefix`, `postfix`, and `default` to meet these needs. 
+When extracting data from web pages, it's often necessary to format the extracted data or ensure the flexibility and robustness of the data extraction process. Jexter offers several practical features such as `prefix`, `postfix`, and `default` to meet these needs. 
 
 Imagine we aim to extract the name of a drug, the link to the drug's instruction manual, and the manufacturer information from a web page containing drug information. The web page's structure might slightly vary, for example, the drug name might be located within different HTML tags. Therefore, it's important to be able to flexibly extract the drug name from potentially multiple locations and format the extracted drug name appropriately.
 
@@ -34,7 +34,7 @@ The `prefix` and `postfix` features allow the addition of custom text before and
 
 Our goal is to add the prefix "Drug Name:" and the postfix "[Details]" to the extracted drug name.
 
-## Jextor Configuration
+## Jexter Configuration
 
 ```json
 {
@@ -66,7 +66,7 @@ The `default` feature provides an alternative extraction path. When the primary 
 
 Given possible variations in HTML structure, we incorporate the `default` feature to extract the drug name from an alternative structure if the primary path is unsuccessful.
 
-## Jextor Configuration Adjustment
+## Jexter Configuration Adjustment
 
 ```json
 {

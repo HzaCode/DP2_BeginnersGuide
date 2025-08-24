@@ -19,15 +19,15 @@
   - Use **`TASK_extra_data`** to retrieve specific details, including **`category_id`**.
 - **Project and Task Correlation**:
   - A single **`project_name`** may encompass numerous **`tasks`**, each with a unique **`id`**.
-- **Extracting Details with Jextor**:
-  - In Jextor, leverage **`TASK_extra_data`** to extract detailed information like **`category_id`**.
+- **Extracting Details with Jexter**:
+  - In Jexter, leverage **`TASK_extra_data`** to extract detailed information like **`category_id`**.
 
 - **Focus on NMPA Approved Drugs**:
   - Prioritize drugs approved by the NMPA, especially those with a "National Medicine Permission" number. Exclude veterinary drugs and supplements. Use the NMPA website for verification if needed to ensure data accuracy and efficiency.
 - **Data Association**:
   - When the project name (**`project_name`**) and URL remain the same, updates to new projects will automatically be associated with the original task (**`task`**) location.
-- **Save JSON In Jextor**:
-  - In Jextor, when you click on the configuration window, the content you see will be **`push`** ed to the next **`step`** and displayed in **`dataout`**. If needed, remember to **`Save the JSON`**. The test **`parse`** of each **`step`** is very important, so that the **`default`** parsing mechanism of Jextor is not used during the **`push`**.
+- **Save JSON In Jexter**:
+  - In Jexter, when you click on the configuration window, the content you see will be **`push`** ed to the next **`step`** and displayed in **`dataout`**. If needed, remember to **`Save the JSON`**. The test **`parse`** of each **`step`** is very important, so that the **`default`** parsing mechanism of Jexter is not used during the **`push`**.
 - **Handling Pharmaceutical Product Information Leaflets**:
   - In the case of pharmaceutical product information leaflets, please ensure to directly extract and append them to the **`attachment`** field.
 - **Multiple Link Handling for Data Input**:

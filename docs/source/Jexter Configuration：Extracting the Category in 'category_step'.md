@@ -3,7 +3,7 @@
 
 
 **Description:**
-Within the DP2 system, `category_step` serves as a crucial step for extracting category information from web pages. In this tutorial, we will detail how to extract category links from HTML pages using Jextor. We will demonstrate the use of Jextor configuration through three examples, each targeting a specific HTML structure and extraction requirement. This will help you understand how to write and apply Jextor configurations according to your specific situations.
+Within the DP2 system, `category_step` serves as a crucial step for extracting category information from web pages. In this tutorial, we will detail how to extract category links from HTML pages using Jexter. We will demonstrate the use of Jexter configuration through three examples, each targeting a specific HTML structure and extraction requirement. This will help you understand how to write and apply Jexter configurations according to your specific situations.
 
 ### Example 1: Extracting Elements with a Specific Class Name
 
@@ -18,7 +18,7 @@ Suppose we have the following HTML fragment, containing two `div` elements with 
 </div>
 ```
 
-To extract the product category, link, and category ID from these elements, we can use the following Jextor configuration:
+To extract the product category, link, and category ID from these elements, we can use the following Jexter configuration:
 
 ```json
 {
@@ -121,7 +121,7 @@ Finally, consider the following HTML fragment, where elements are marked with a 
 </div>
 ```
 
-We can extract the product category, link, and category ID through the following Jextor configuration:
+We can extract the product category, link, and category ID through the following Jexter configuration:
 
 ```json
 {
@@ -156,4 +156,4 @@ The expected extraction results are as follows:
   }
 ]
 ```
-In these three examples, we've shown how to use Jextor for extracting data from different HTML page structures within the `category_step` . Following the data extraction, the subsequent step is to determine the total number of pages, which is done in the [`totalpage_step` ](Study：totalpage_step.md).
+In these three examples, we've shown how to use Jexter for extracting data from different HTML page structures within the `category_step` . Following the data extraction, the subsequent step is to determine the total number of pages, which is done in the [`totalpage_step` ](Study：totalpage_step.md).

@@ -1,12 +1,12 @@
-# Special Case： Extracting 'category_id' from DP2 Jextor System
+# Special Case： Extracting 'category_id' from DP2 Jexter System
 
 **Introduction**
 
-When extracting data from the DP2 Jextor system, it is often necessary to retrieve specific information, such as the `category_id`, from the `TASK_extra_data` field. This field contains a JSON-formatted string with nested data. To accurately extract the `category_id`, follow the steps and formatting guidelines provided below, along with common pitfalls and how to avoid them.
+When extracting data from the DP2 Jexter system, it is often necessary to retrieve specific information, such as the `category_id`, from the `TASK_extra_data` field. This field contains a JSON-formatted string with nested data. To accurately extract the `category_id`, follow the steps and formatting guidelines provided below, along with common pitfalls and how to avoid them.
 
 **TASK_extra_data Overview**
 
-The `TASK_extra_data` field in Jextor task configurations holds supplementary data related to the task, typically in JSON format. An example of such data might look like this:
+The `TASK_extra_data` field in Jexter task configurations holds supplementary data related to the task, typically in JSON format. An example of such data might look like this:
 
 ```json
 {
@@ -73,4 +73,4 @@ Here, `category_id`: "21" accurately reflects the extracted value from `TASK_ext
 
 **Conclusion**
 
-By following these guidelines and avoiding common mistakes, you can effectively extract the `category_id` from the `TASK_extra_data` field in the DP2 Jextor system. This ensures that your data extraction process is both accurate and efficient.
+By following these guidelines and avoiding common mistakes, you can effectively extract the `category_id` from the `TASK_extra_data` field in the DP2 Jexter system. This ensures that your data extraction process is both accurate and efficient.

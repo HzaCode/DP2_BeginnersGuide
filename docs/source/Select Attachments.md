@@ -1,6 +1,6 @@
 #   Select Attachments
 
-In this tutorial, we'll  demonstrate how to effectively use Jextor for HTML attachments data extraction. This process is briefly introduced in our [DP2 for Beginners](Jexter%20Configuration：Extracting%20Drug%20Information%20in%20'detail_step'.md) guide, especially for extracting detailed information from HTML. 
+In this tutorial, we'll  demonstrate how to effectively use Jexter for HTML attachments data extraction. This process is briefly introduced in our [DP2 for Beginners](Jexter%20Configuration：Extracting%20Drug%20Information%20in%20'detail_step'.md) guide, especially for extracting detailed information from HTML. 
 
 Here is a simplified HTML page example containing the product details section, which includes images, contact information, the official website link, and the company logo.
 
@@ -42,8 +42,8 @@ Here is a simplified HTML page example containing the product details section, w
 
 ```
 
-### Jextor Configuration and Extraction Results
- Below are three different Jextor configurations and their corresponding extraction results.
+### Jexter Configuration and Extraction Results
+ Below are three different Jexter configurations and their corresponding extraction results.
 
 #### Basic Extraction Configuration
 This configuration will extract all content within `<dl class="pro_detail_op">`.
@@ -164,4 +164,4 @@ This configuration will only extract image links within `<dt>` tags.
 ```
 
 ### Conclusion
-Through these configuration examples, you can see how to use Jextor to customize data extraction strategies. You can choose the appropriate configuration based on the actual HTML structure and requirements to extract the needed data.
+Through these configuration examples, you can see how to use Jexter to customize data extraction strategies. You can choose the appropriate configuration based on the actual HTML structure and requirements to extract the needed data.

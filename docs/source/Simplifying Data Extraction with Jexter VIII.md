@@ -1,6 +1,6 @@
-#  Execution Order of Extraction with the Jextor in DP2
+#  Execution Order of Extraction with the Jexter in DP2
 
-When exploring the use of Jextor within DP2, it becomes especially important to deeply understand how they function, their key concepts, and their execution order. These tools are designed to simplify and automate the process of extracting information from HTML or similarly structured documents. Let's revisit and familiarize ourselves with these key functions and steps to be able to configure data extraction rules efficiently and accurately, ensuring the capture of the desired data.
+When exploring the use of Jexter within DP2, it becomes especially important to deeply understand how they function, their key concepts, and their execution order. These tools are designed to simplify and automate the process of extracting information from HTML or similarly structured documents. Let's revisit and familiarize ourselves with these key functions and steps to be able to configure data extraction rules efficiently and accurately, ensuring the capture of the desired data.
 
 ### Data Location
 
@@ -31,7 +31,7 @@ Within the defined **elements**, data extraction and processing follow this orde
 - **must_match**: Ensures only data that meets specific criteria is included in the final results during the data row extraction phase.
 - **prefix** and **postfix**: Used to add formatting content before or after the final extracted text, such as adding a domain prefix to links or appending parameter suffixes.
 
-Below, we will demonstrate how to employ Jextor's various functions in a sequential and layered manner to achieve precise and clean data extraction results.
+Below, we will demonstrate how to employ Jexter's various functions in a sequential and layered manner to achieve precise and clean data extraction results.
 
 #### HTML Source Example
 
@@ -47,7 +47,7 @@ Below, we will demonstrate how to employ Jextor's various functions in a sequent
 </div>
 ```
 
-####  Jextor Configuration and Execution Order
+####  Jexter Configuration and Execution Order
 
 1. **Parent Selection**
 
@@ -109,7 +109,7 @@ Below, we will demonstrate how to employ Jextor's various functions in a sequent
 
 #### Expected JSON Output
 
-The application of the specified Jextor configuration to our HTML source should yield a JSON object like this:
+The application of the specified Jexter configuration to our HTML source should yield a JSON object like this:
 
 ```json
 {
@@ -125,4 +125,4 @@ The application of the specified Jextor configuration to our HTML source should 
 
 
 
-This section integrates and emphasizes the sequential application of Jextor's extraction and processing functions, providing a structured approach to handling complex data extraction needs. Through the comprehensive scenario, we've demonstrated the utility of `parent` for scope limitation, `elements` for data selection and extraction, and `data_out` for final data manipulation. This approach allows for the efficient and precise capture of structured data from HTML sources, showcasing the depth of customization and control offered by Jextor within DP2.
+This section integrates and emphasizes the sequential application of Jexter's extraction and processing functions, providing a structured approach to handling complex data extraction needs. Through the comprehensive scenario, we've demonstrated the utility of `parent` for scope limitation, `elements` for data selection and extraction, and `data_out` for final data manipulation. This approach allows for the efficient and precise capture of structured data from HTML sources, showcasing the depth of customization and control offered by Jexter within DP2.

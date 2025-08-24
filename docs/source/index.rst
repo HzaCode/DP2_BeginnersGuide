@@ -111,7 +111,7 @@ DP2 Beginner's Guide
    :caption: 13. Special Case Collection
 
    Special Case： Avoiding Duplicate Keys in JSON Data Structures.md
-   Special Case： Extracting 'category_id' from DP2 Jextor System.md
+   Special Case： Extracting 'category_id' from DP2 Jexter System.md
    Special Case： Iterative Parameter Configuration for Efficient Data Collection.md
    Select Attachments.md
    Select_Drug_Category_Links.md

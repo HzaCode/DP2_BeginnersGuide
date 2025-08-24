@@ -62,7 +62,7 @@
 
 ## 13. Special Case Collection
 - [Avoiding Duplicate Keys in JSON Data Structures](Special%20Case%20Collection/Special%20Case：%20Avoiding%20Duplicate%20Keys%20in%20JSON%20Data%20Structures.md)
-- [Extracting 'category_id' from DP2 Jextor System](Special%20Case%20Collection/Special%20Case：%20Extracting%20'category_id'%20from%20DP2%20Jextor%20System.md)
+- [Extracting 'category_id' from DP2 Jexter System](Special%20Case%20Collection/Special%20Case：%20Extracting%20'category_id'%20from%20DP2%20Jexter%20System.md)
 - [Iterative Parameter Configuration for Efficient Data Collection](Special%20Case%20Collection/Special%20Case：%20Iterative%20Parameter%20Configuration%20for%20Efficient%20Data%20Collection.md)
 - [Select Attachments](Special%20Case%20Collection/Select%20Attachments.md)
 - [Select Drug Category Links](Special%20Case%20Collection/Select_Drug_Category_Links.md)
