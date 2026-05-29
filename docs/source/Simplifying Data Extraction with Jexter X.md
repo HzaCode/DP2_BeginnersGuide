@@ -1,7 +1,9 @@
 
-### Comprehensive Example
+# Simplifying Data Extraction with Jexter X
 
-Suppose you need to extract drug names, batch numbers, production and expiration dates, manufacturer links, availability, and additional information from a webpage that contains a list of multiple drugs, each with detailed descriptions and images：
+## Comprehensive Example
+
+Suppose you need to extract drug names, batch numbers, production and expiration dates, manufacturer links, availability, and additional information from a webpage that contains a list of multiple drugs, each with detailed descriptions and images:
 
 ```html
 <div class="drugs-container">
@@ -11,7 +13,7 @@ Suppose you need to extract drug names, batch numbers, production and expiration
         <span class="production-date">01/01/2023</span>
         <span class="expiration-date">01/01/2024</span>
         <a class="manufacturer-link" href="http://example.com/manufacturer1">Manufacturer 1 - Pharma Inc</a>
-        <img src="http://example.com/drugs/images/drug1.jpg" />
+        <img src="drug1.jpg" />
         <div class="description">This is a description of Drug Name 1.</div>
         <span class="availability">In Stock</span>
         <div class="additional-info">Contains active ingredients A, B, C.</div>
@@ -22,14 +24,14 @@ Suppose you need to extract drug names, batch numbers, production and expiration
         <span class="production-date">02/02/2023</span>
         <span class="expiration-date">02/02/2024</span>
         <a class="manufacturer-link" href="http://example.com/manufacturer2">Manufacturer 2 - BioHealth</a>
-        <img src="http://example.com/drugs/images/drug2.jpg" />
+        <img src="drug2.jpg" />
         <div class="description">This is a description of Drug Name 2, with more details.</div>
         <span class="availability">Out of Stock</span>
         <div class="additional-info">Recommended for condition X, Y.</div>
     </div>
 </div>
 ```
-We will use all the core functions of Jexter to accomplish this task：
+We will use all the core functions of Jexter to accomplish this task:
 
 ```json
 {
@@ -63,11 +65,13 @@ We will use all the core functions of Jexter to accomplish this task：
           "type": "string"
         },
         "manufacturer_name": {
+          "col": "./a[@class='manufacturer-link']/text()",
           "function": {
-            "regexp": "(.+)\\s-\\s(.+)",
-            "return": ["manufacturer_name", 1],
+            "regexp": ".+\\s-\\s(.+)",
+            "return": [1],
             "type": "string"
-          }
+          },
+          "default": "N/A"
         },
         "image": {
           "col": "./img/@src",
@@ -106,12 +110,12 @@ We will use all the core functions of Jexter to accomplish this task：
 - `regexp`: This function uses regular expressions to match and extract specific text patterns. For example, `"\\w+-\\w+"` is used to match batch numbers composed of letters and digits.
 - `innerHtml`: This function is used to extract the full content of an HTML element, including all child elements. In this example, it is used to extract the drug description.
 - `text`: This function directly returns a fixed string. In this example, it is used to set the default availability text.
-- `function`: This function allows us to define a custom data processing function. In this example, we use it to extract the manufacturer's name from the text of the manufacturer link. The regular expression `"(.+)\\s-\\s(.+)"` matches two parts separated by spaces, and the `return` array specifies the second part (index 1) we want to extract, which is the manufacturer's name.
+- `function`: This function allows us to define a custom data processing function. In this example, we use it to extract the manufacturer's name from the text of the manufacturer link. The regular expression `".+\\s-\\s(.+)"` matches the part after the separator, and the `return` array specifies the captured manufacturer name.
 - `default`: This function provides a default value to use when `col` does not find data. In this example, it is used to set default values for the batch number and manufacturer's name.
 - `must_match`: This function ensures that the extracted text matches a specified pattern. If not, the `default` value is used. In this example, it is used to ensure the drug is "In Stock".
 - `prefix` and `postfix`: These functions add a specified string before and after the extracted text, respectively. In this example, `prefix` is used to build the full image link, and `postfix` is used to add extra text after the additional information.
 - `data_out`: This function uses JMESPath syntax to format the final output. It maps the extracted data to a new JSON object and arranges it according to the specified structure.
 
-### Conclusion
+## Conclusion
 
 We have detailed all the core functions of Jexter and demonstrated how to combine these functions through a comprehensive example. This tutorial aims to help you better understand and utilize Jexter for efficient webpage data extraction.

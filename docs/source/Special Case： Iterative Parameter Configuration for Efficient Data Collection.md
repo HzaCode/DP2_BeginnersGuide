@@ -1,8 +1,8 @@
- # Special Case: Iterative Parameter Configuration 
+# Special Case: Iterative Parameter Configuration
 
 
 
-Iterative parameter configuration is a critical aspect that allows for systematic navigation through multi-page data sources in the "[list_step](../Study：list_step.md)".
+Iterative parameter configuration is a critical aspect that allows for systematic navigation through multi-page data sources in the [`list_step`](Study：list_step.md).
 
 
 
@@ -33,12 +33,13 @@ This configuration specifies the project name, URL pattern with dynamic placehol
      ```json
      {
        "iteration": {
-         "start": 2, // Incorrectly skips the first page
+         "start": 2,
          "stop": "{TotalPageNum}",
          "format": "{page_number}"
        }
      }
      ```
+     This is incorrect because it skips the first page.
   
 
 2. **Special First Page Handling**
@@ -49,14 +50,15 @@ This configuration specifies the project name, URL pattern with dynamic placehol
        "url": {
          "pattern": "https://www.examplepharm.com/main/product-list.html?cId={category_id}&pn=(*).html",
          "iteration": {
-           "first": "1",  // Incorrectly assumes the first page is standard
-           "start": 2,    // Should start from the first page
+           "first": "1",
+           "start": 2,
            "stop": "{TotalPageNum}",
            "format": "{}"
          }
        }
      }
      ```
+     This is incorrect when it assumes the first page is standard and starts iteration from the second page.
  
 
 3. **Hardcoded Total Page Number**
@@ -66,11 +68,12 @@ This configuration specifies the project name, URL pattern with dynamic placehol
      {
        "iteration": {
          "start": 1,
-         "stop": 5, // Incorrectly assumes there are only 5 pages
+         "stop": 5,
          "format": "{page_number}"
        }
      }
      ```
+     This is incorrect because it hardcodes the total page count.
 
 
 4. **URL Placeholder Errors**
@@ -79,7 +82,7 @@ This configuration specifies the project name, URL pattern with dynamic placehol
      ```json
      {
        "url": {
-         "pattern": "https://www.examplemed.com/main/list.html?cId=&pn={page_number}.html", // Forgot to replace `{category_id}`
+         "pattern": "https://www.examplemed.com/main/list.html?cId=&pn={page_number}.html",
          "iteration": {
            "start": 1,
            "stop": "{TotalPageNum}",
@@ -88,6 +91,7 @@ This configuration specifies the project name, URL pattern with dynamic placehol
        }
      }
      ```
+     This is incorrect because the `{category_id}` placeholder is missing from the URL.
 
 **Conclusion**
 

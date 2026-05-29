@@ -3,18 +3,18 @@
 
 In this tutorial, we will delve into the basic concepts of XPath and demonstrate through practical examples how to effectively use the `Parent` configuration in Jexter settings to simplify XPath expressions, improving the efficiency and accuracy of data extraction.
 
-#### Common Forms of [XPath](XPath%20for%20DP2.md) Expressions Include:
+## Common Forms of [XPath](XPath%20for%20DP2.md) Expressions Include:
 
 - Absolute path: A path starting from the root element, for example, `/html/body/div`.
 - Relative path: A path relative to the current element, for example, `./div/p`.
 - Wildcard: Using `*` to represent any element, for example, `/html/*/div`.
 - Conditional expression: Adding conditions with `[]`, for example, `//div[@class='example']`.
 
-#### Simplifying XPath Using `Parent` Configuration
+## Simplifying XPath Using `Parent` Configuration
 
 In Jexter settings, the `parent` configuration allows us to define a base XPath path, which serves as the starting point for all subsequent elements. By using `parent`, we can avoid repeating long paths, making the configuration more concise and easier to manage.
 
-#### Example 1: Nested Structure of Medicine Information
+## Example 1: Nested Structure of Medicine Information
 
 **HTML Structure Example**:
 
@@ -47,7 +47,7 @@ parent: "//div[@class='medicine']/div[@class='details']"
 **Explanation**:
 This structure contains nested `div` elements for different types of medicine information. The `parent` configuration helps focus on data extraction under `details`, such as components and usage methods, rather than the entire medicine information.
 
-#### Example 2: Columnar Display of Medicine Components and Effects
+## Example 2: Columnar Display of Medicine Components and Effects
 
 **HTML Structure Example**:
 
@@ -76,7 +76,7 @@ parent: "//div[@class='medicine-detail']/div[@class='left-column'] | //div[@clas
 **Explanation**:
 In this example, the components and effects of the medicine are placed in the left and right columns, respectively. The `parent` configuration allows us to locate these two different columns simultaneously for extracting the list of components and the description of expected effects.
 
-#### Example 3: Medicine Reviews and User Ratings Combination
+## Example 3: Medicine Reviews and User Ratings Combination
 
 **HTML Structure Example**:
 
@@ -100,7 +100,7 @@ parent: "//div[@class='reviews-section']/div[@class='review']"
 **Explanation**:
 In this example, each review includes the user name, rating, and comment text. The `parent` configuration targets each independent review, allowing for granular extraction and analysis of user feedback.
 
-#### Example 4: Medicine Instructions and Warning Information
+## Example 4: Medicine Instructions and Warning Information
 
 **HTML Structure Example**:
 
@@ -129,7 +129,7 @@ parent: "//div[@class='instruction-section']/div[@class='usage-instructions'] | 
 **Explanation**:
 This structure separates usage instructions and warning information, but both are part of the larger `instruction-section`. The `parent` configuration allows focusing on extracting information about usage instructions and warnings simultaneously.
 
-#### Example 5: Multi-Functional Medicine Page
+## Example 5: Multi-Functional Medicine Page
 
 **HTML Structure Example**:
 
@@ -155,6 +155,6 @@ parent: "//div[@class='medicine-page']/div[@class='overview'] | //div[@class='me
 **Explanation**:
 In this final example, the page is divided into an overview section and a detailed information section. The `parent` configuration enables the extraction of both general and detailed information about the medicine without redundant path specifications.
 
-#### Conclusion
+## Conclusion
 
 Using the `parent` configuration in Jexter settings not only simplifies XPath expressions but also enhances the structure and readability of your data extraction setup. By effectively leveraging this feature, you can streamline the extraction process, making it more efficient and adaptable to complex HTML structures.

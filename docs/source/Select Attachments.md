@@ -1,6 +1,6 @@
-#   Select Attachments
+# Select Attachments
 
-In this tutorial, we'll  demonstrate how to effectively use Jexter for HTML attachments data extraction. This process is briefly introduced in our [DP2 for Beginners](Jexter%20Configuration：Extracting%20Drug%20Information%20in%20'detail_step'.md) guide, especially for extracting detailed information from HTML. 
+In this tutorial, we'll demonstrate how to effectively use Jexter for HTML attachment data extraction. This process is briefly introduced in our [DP2 for Beginners](Jexter%20Configuration：Extracting%20Drug%20Information%20in%20'detail_step'.md) guide, especially for extracting detailed information from HTML.
 
 Here is a simplified HTML page example containing the product details section, which includes images, contact information, the official website link, and the company logo.
 
@@ -42,10 +42,10 @@ Here is a simplified HTML page example containing the product details section, w
 
 ```
 
-### Jexter Configuration and Extraction Results
+## Jexter Configuration and Extraction Results
  Below are three different Jexter configurations and their corresponding extraction results.
 
-#### Basic Extraction Configuration
+### Basic Extraction Configuration
 This configuration will extract all content within `<dl class="pro_detail_op">`.
 
 ```json
@@ -57,7 +57,7 @@ This configuration will extract all content within `<dl class="pro_detail_op">`.
 }
 ```
 
-#### Extraction Results (Basic Extraction)
+### Extraction Results (Basic Extraction)
 ```json
 {
   "attachments": [
@@ -93,7 +93,7 @@ This configuration will extract all content within `<dl class="pro_detail_op">`.
 }
 ```
 
-#### Configuration to Exclude Specific Type Attachments
+### Configuration to Exclude Specific Type Attachments
 This configuration will exclude SVG type attachments, extracting only JPG images.
 
 ```json
@@ -107,7 +107,7 @@ This configuration will exclude SVG type attachments, extracting only JPG images
 }
 ```
 
-#### Extraction Results (Exclude SVG)
+### Extraction Results (Exclude SVG)
 ```json
 {
   "attachments": [
@@ -136,19 +136,19 @@ This configuration will exclude SVG type attachments, extracting only JPG images
 }
 ```
 
-#### Configuration for Extracting Image Links Within Specific Sub-elements
-This configuration will only extract image links within `<dt>` tags.
+### Configuration for Extracting Image Links Within Specific Sub-elements
+This configuration will only extract image links within `<dd>` tags.
 
 ```json
 {
   "attachments": {
-    "innerHtml": "//dl[@class='pro_detail_op']/dt/img",
+    "innerHtml": "//dl[@class='pro_detail_op']/dd/img",
     "extract_attachments": {}
   }
 }
 ```
 
-#### Extraction Results (Specific Sub-elements)
+### Extraction Results (Specific Sub-elements)
 ```json
 {
   "attachments": [
@@ -163,5 +163,5 @@ This configuration will only extract image links within `<dt>` tags.
 }
 ```
 
-### Conclusion
+## Conclusion
 Through these configuration examples, you can see how to use Jexter to customize data extraction strategies. You can choose the appropriate configuration based on the actual HTML structure and requirements to extract the needed data.

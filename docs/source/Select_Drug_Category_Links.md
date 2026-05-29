@@ -1,11 +1,11 @@
-#  Select Drug Category Links
-This tutorial will demonstrate how to use Jexter configurations to handle specific HTML structures, with a particular emphasis on selecting links. This process is basically introduced in our [DP2 for Beginners](Jexter%20Configuration：Extracting%20the%20Category%20in%20'category_step'.md) guide, while in this tutorial, we will explore a special case, namely how to filter links.
+# Select Drug Category Links
+This tutorial will demonstrate how to use Jexter configurations to handle specific HTML structures, with a particular emphasis on selecting links. This process is introduced in our [DP2 for Beginners](Jexter%20Configuration：Extracting%20the%20Category%20in%20'category_step'.md) guide, while in this tutorial, we will explore a special case, namely how to filter links.
 
 
 
 
 
-#### Sample Web Page Structure
+## Sample Web Page Structure
 
 Assume the target webpage's HTML structure is as follows:
 
@@ -28,7 +28,7 @@ Assume the target webpage's HTML structure is as follows:
 </div>
 ```
 
-#### XPath Expression
+## XPath Expression
 
 To extract the category names and links in the middle (excluding the first and last `li` elements), we use the following XPath expression:
 
@@ -36,7 +36,7 @@ To extract the category names and links in the middle (excluding the first and l
 //div[@class='com_main bg3']/div[1]/div[1]/ul/li[position()>1 and position()<last()]
 ```
 
-#### Data Extraction Configuration
+## Data Extraction Configuration
 
 Based on the provided structure, we define the following  configuration for data extraction:
 
@@ -61,7 +61,7 @@ Based on the provided structure, we define the following  configuration for data
 }
 ```
 
-#### Example Extraction Results
+## Example Extraction Results
 
 With the above configuration and HTML structure, we expect the following extraction results:
 
@@ -80,7 +80,7 @@ With the above configuration and HTML structure, we expect the following extract
 ]
 ```
 
-#### Result Explanation
+## Result Explanation
 
 This result is a JSON array, where each object represents a drug category. For each category, we provide three key pieces of information:
 

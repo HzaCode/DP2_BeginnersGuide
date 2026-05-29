@@ -43,9 +43,11 @@ In this configuration, the `json_extract##category_id` callback function is resp
 
    ```json
    {
-     "category_id": "TASK_extra_data" // Incorrect, returns the entire `TASK_extra_data` content
+     "category_id": "TASK_extra_data"
    }
    ```
+
+   This is incorrect because it returns the entire `TASK_extra_data` content.
 
 2. **Missing or Incorrect Callback Function**: Omitting or misconfiguring the callback function will prevent extraction of the `category_id`. For example:
 
@@ -53,10 +55,12 @@ In this configuration, the `json_extract##category_id` callback function is resp
    {
      "category_id": {
        "col": "TASK_extra_data",
-       "callback": "category_id" // Incorrect, should be "json_extract##category_id"
+       "callback": "category_id"
      }
    }
    ```
+
+   This is incorrect because the callback should be `json_extract##category_id`.
 
 **Correct Configuration and Outcome**
 

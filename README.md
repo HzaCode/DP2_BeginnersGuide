@@ -58,7 +58,7 @@ Deep Understanding of Core Features
 
 &nbsp;
 
-• [Category Step](http://hezhiang.com/DP2_BeginnersGuide/Study%EF%BC%9Acatogery_step.html)  
+• [Category Step](http://hezhiang.com/DP2_BeginnersGuide/Study%EF%BC%9Acategory_step.html)<br/>
 • [List Step](http://hezhiang.com/DP2_BeginnersGuide/Study%EF%BC%9Alist_step.html)  
 • [Detail Step](http://hezhiang.com/DP2_BeginnersGuide/Study%EF%BC%9Adetail_step.html)  
 • [Attachment Step](http://hezhiang.com/DP2_BeginnersGuide/Study%EF%BC%9A%20attachment_step.html)
@@ -153,4 +153,3 @@ Let DP2 Power Your Data Journey
 <br/>
 <br/>
 <p><small><em>DP2 is a core module of the <a href="https://github.com/HzaCode/AITEP">AITEP Project</a>.</em></small></p>
-

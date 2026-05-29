@@ -60,7 +60,7 @@ Incorrectly setting the starting page number (start) to 2, assuming the first pa
   "url": {
     "pattern": "https://www.examplemed.com/main/list.html?cId={category_id}&pn={page_number}",
     "iteration": {
-      "start": 2, // Incorrectly skipped the first page
+      "start": 2,
       "stop": "{TotalPageNum}",
       "format": "{page_number}"
     }
@@ -79,8 +79,8 @@ When the first page has a special URL format, but the `first` parameter is not c
   "url": {
     "pattern": "https://www.examplepharm.com/main/product-list.html?cId={category_id}&pn=(*).html",
     "iteration": {
-      "first": "1",  // If the first page is special, should be set to actual conditions
-      "start": 1,    // If the first page is special, start from the second page
+      "first": "1",
+      "start": 1,
       "stop": "{TotalPageNum}",
       "format": "{}"
     }
@@ -100,7 +100,7 @@ Hardcoding `TotalPageNum` as an estimated value, rather than dynamically obtaini
     "pattern": "https://www.examplemed.com/main/list.html?cId={category_id}&pn={page_number}",
     "iteration": {
       "start": 1,
-      "stop": 5, // Assuming the total number of pages is 5, which may not match the actual situation
+      "stop": 5,
       "format": "{page_number}"
     }
   }
@@ -116,7 +116,7 @@ Forgetting to replace `{category_id}` or the page number placeholder `{page_numb
 {
   "project_name": "{STU}.list",
   "url": {
-    "pattern": "https://www.examplemed.com/main/list.html?cId=&pn={page_number}",   // Forgot to replace `{category_id}`
+    "pattern": "https://www.examplemed.com/main/list.html?cId=&pn={page_number}",
     "iteration": {
       "start": 1,
       "stop": "{TotalPageNum}",
@@ -126,4 +126,4 @@ Forgetting to replace `{category_id}` or the page number placeholder `{page_numb
 }
 ```
 ### Testing `list_step`
-Accurately configuring `list_step`is key to extracting vital information from listing pages, setting the stage for in-depth content analysis and data processing. Tailor adjustments to the specific requirements of the target website to enhance accuracy and efficiency. Avoid common pitfalls such as incorrect starting page numbers and improper handling of unique first-page URLs. Such measures are imperative to ensure comprehensive and accurate data collection, pivotal for [extracting drug links](Jexter%20Configuration：Extract%20Page%20Information%20in%20the%20list_step%20.md) subsequently.
+Accurately configuring `list_step` is key to extracting vital information from listing pages, setting the stage for in-depth content analysis and data processing. Tailor adjustments to the specific requirements of the target website to enhance accuracy and efficiency. Avoid common pitfalls such as incorrect starting page numbers and improper handling of unique first-page URLs. Such measures are imperative to ensure comprehensive and accurate data collection, pivotal for [extracting drug links](Jexter%20Configuration：Extract%20Page%20Information%20in%20the%20list_step%20.md) subsequently.

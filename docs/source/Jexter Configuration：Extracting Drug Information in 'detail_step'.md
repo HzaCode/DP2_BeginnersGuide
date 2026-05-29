@@ -1,5 +1,5 @@
 
- # Extracting Drug Information in `detail_step `
+# Extracting Drug Information in `detail_step`
 
 ## Description
 

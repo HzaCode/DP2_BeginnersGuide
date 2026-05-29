@@ -1,10 +1,12 @@
 
+# Simplifying Data Extraction with Jexter IV
 
-In this tutorial, we'll summarize the usage of three key aspects in Jexter: `total_row`, `parent`, and `elements`. These concepts work together to simplify the configuration process and enhance the efficiency and accuracy of drug data extraction from web pages.
 
-### Total Row: Defining the Total Number of Drugs to Extract
+In this tutorial, we'll summarize the usage of three key aspects in Jexter: `total_rows`, `parent`, and `elements`. These concepts work together to simplify the configuration process and enhance the efficiency and accuracy of drug data extraction from web pages.
 
-`total_row` is utilized to specify the total number of drugs to extract from a list. This is especially useful for pages containing extensive lists of drugs. By setting `total_row`, you can control the scope of data extraction, ensuring that only the necessary information is retrieved, thus avoiding redundancy.
+## Total Rows: Defining the Total Number of Drugs to Extract
+
+`total_rows` is utilized to specify the total number of drugs to extract from a list. This is especially useful for pages containing extensive lists of drugs. By setting `total_rows`, you can control the scope of data extraction, ensuring that only the necessary information is retrieved, thus avoiding redundancy.
 
 **HTML Example:**
 ```html
@@ -24,7 +26,7 @@ In this tutorial, we'll summarize the usage of three key aspects in Jexter: `tot
 **Jexter Configuration:**
 ```json
 {
-  "total_row": "//table[@class='drug-list']/tr[position()<=20]",
+  "total_rows": "//table[@class='drug-list']/tr[position()<=20]",
   "elements": {
     "name": "./td[1]/text()",
     "dosage": "./td[2]/text()"
@@ -43,13 +45,12 @@ In this tutorial, we'll summarize the usage of three key aspects in Jexter: `tot
     "name": "Ibuprofen",
     "dosage": "200mg"
   }
-  // Up to 20 records
 ]
 ```
 
-In this example, `total_row` effectively limits the extraction process to the first 20 drugs in the list.
+In this example, `total_rows` effectively limits the extraction process to the first 20 drugs in the list.
 
-### Parent: Streamlining the XPath Configuration
+## Parent: Streamlining the XPath Configuration
 
 `parent` defines a base XPath, setting a common starting point for extracting all related drug information. This approach streamlines the configuration by eliminating the need to repeat the base path for each data element, thus making your configuration more concise and manageable.
 
@@ -85,7 +86,7 @@ In this example, `total_row` effectively limits the extraction process to the fi
 
 Using `parent` simplifies specifying the XPaths for each element by setting a common reference point.
 
-### Elements: Specifying Drug Information to Extract
+## Elements: Specifying Drug Information to Extract
 
 Within the `elements` section of the Jexter configuration, you define what specific information to extract. This setup uses XPath expressions, which can be relative to the `parent` XPath if defined, to identify the exact data points within the webpage.
 
@@ -121,9 +122,9 @@ Within the `elements` section of the Jexter configuration, you define what speci
 
 In this setup, `elements` are defined relative to the `parent` to efficiently extract the desired information.
 
-### Combining the Three Aspects for Efficient Drug Data Extraction
+## Combining the Three Aspects for Efficient Drug Data Extraction
 
-When `total_row`, `parent`, and `elements` are used together, they form a robust configuration for drug data extraction.
+When `total_rows`, `parent`, and `elements` are used together, they form a robust configuration for drug data extraction.
 
 **HTML Example:**
 ```html
@@ -140,7 +141,7 @@ When `total_row`, `parent`, and `elements` are used together, they form a robust
 **Jexter Configuration:**
 ```json
 {
-  "total_row": "//div[@class='drug-catalog']/div[@class='drug-item']",
+  "total_rows": "//div[@class='drug-catalog']/div[@class='drug-item']",
   "parent": "//div[@class='drug-item']",
   "elements": {
     "name": "./h3/text()",
@@ -158,6 +159,7 @@ When `total_row`, `parent`, and `elements` are used together, they form a robust
     "dosage": "500mg, 850mg, 1000mg",
     "indication": "Used to treat type 2 diabetes."
   }
-  // Additional drugs as per configuration
 ]
 ```
+
+Additional drug objects would follow the same structure.

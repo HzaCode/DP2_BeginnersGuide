@@ -1,4 +1,6 @@
 
+# Configuring POST Requests in DP2
+
 When handling specific automation tasks, configuring the correct request parameters is crucial. These `steps` may involve extracting data from specific web pages, or sending data to services to retrieve the necessary information. This tutorial will guide you through configuring a `step` to perform a POST request with a concrete example for better understanding and application.
 
 ## Example Overview
@@ -7,7 +9,7 @@ In this example, we will configure a task aimed at sending a POST request to a s
 
 ## Configuring Basic Information
 
-Firstly, we need to define the basic properties of the task, including the project name, request type, priority, and the request's URL. This information informs the `dp2` system of the task's basic structure and objectives.
+Firstly, we need to define the basic properties of the task, including the project name, request type, priority, and the request's URL. This information informs the DP2 system of the task's basic structure and objectives.
 
 ```json
 {
@@ -104,4 +106,4 @@ Below is a complete configuration example based on the steps above:
 
 Note that the actual application's `project_name`, `url`, `user-agent`, and other specific values need to be adjusted according to your specific requirements.
 
-By following the steps above, you can configure the correct POST request task for the `dp2` system to automatically obtain or submit the required data.
+By following the steps above, you can configure the correct POST request task for the DP2 system to automatically obtain or submit the required data.

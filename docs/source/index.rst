@@ -38,7 +38,7 @@ DP2 Beginner's Guide
    :maxdepth: 2
    :caption: 4. Steps and Extraction Guides
 
-   Study：catogery_step.md
+   Study：category_step.md
    Jexter Configuration：Extracting the Category in 'category_step'.md
    Study：totalpage_step.md
    Jexter Configuration：Extract the Total Number of Pages in `totalpage_step`.md
@@ -72,7 +72,7 @@ DP2 Beginner's Guide
    :maxdepth: 2
    :caption: 8. Monitoring and Logging
 
-   Monitoring and Logging DP2 Activit.md
+   Monitoring and Logging DP2 Activities.md
 
 .. toctree::
    :maxdepth: 2

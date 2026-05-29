@@ -1,4 +1,4 @@
- # Step Configuration ① - Category Step
+# Step Configuration ① - Category Step
 ## Configuring `category_step`
 ### Step Description
 Configuring the `category_step` in the DP2 system is the initial phase in the data extraction process, aimed at gathering category information from a website's category page. This step is crucial for laying the groundwork for subsequent extraction phases, such as retrieving data from list pages. Typically, this configuration requires only a single URL because the category page is often a static webpage that houses links to all categories. This process ensures a structured approach to data extraction by systematically categorizing and accessing the website's content through its category structure.
@@ -58,7 +58,5 @@ Below is a typical example of a `category_step` configuration, demonstrating how
 
 - **Unique Global Variables**: Ensure the value of "STU" is unique to avoid confusion with other studies in the system. This helps maintain clarity and ease of management for your project.
 
-- **Testing Configuration Before Running**: Prior to initiating your data extraction process, it's crucial to ensure the accuracy of your setup with the DP2 platform's test feature. This can be done via the "Test Configuration Parameters" section within the interface. A successful check, confirming your setup is correct and free from errors, results in the creation of a new project. Within this **test project**, you have the opportunity to fine-tune the extraction parameters by setting up the [Jexctor configuration for 'category_step'](Jexter%20Configuration：Extracting%20the%20Category%20in%20'category_step'.md).
-
-
+- **Testing Configuration Before Running**: Prior to initiating your data extraction process, it's crucial to ensure the accuracy of your setup with the DP2 platform's test feature. This can be done via the "Test Configuration Parameters" section within the interface. A successful check, confirming your setup is correct and free from errors, results in the creation of a new project. Within this **test project**, you have the opportunity to fine-tune the extraction parameters by setting up the [Jexter configuration for 'category_step'](Jexter%20Configuration：Extracting%20the%20Category%20in%20'category_step'.md).
 

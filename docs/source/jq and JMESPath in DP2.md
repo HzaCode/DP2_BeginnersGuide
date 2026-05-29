@@ -1,9 +1,9 @@
 # jq and JMESPath in DP2
 
-In the DP2 platform, jq and JMESPath are two invaluable tools for processing and parsing JSON data, particularly within the `data out` section. This  guide provides detailed instructions on utilizing these tools in DP2, alongside practical examples to illustrate their application.
+In the DP2 platform, jq and JMESPath are two invaluable tools for processing and parsing JSON data, particularly within the `data_out` section. This guide provides detailed instructions on utilizing these tools in DP2, alongside practical examples to illustrate their application.
 
 
-### Application of jq in DP2
+## Application of jq in DP2
 
 jq is a lightweight command-line JSON processor that offers a concise way to query, parse, modify, and format JSON data. Here are some common uses of jq:
 
@@ -34,7 +34,7 @@ jq is a lightweight command-line JSON processor that offers a concise way to que
 
    This returns all objects that meet the condition.
 
-### Application of JMESPath in DP2
+## Application of JMESPath in DP2
 
 JMESPath is a query language that allows you to extract information from JSON data in a declarative way. Here are some basic uses of JMESPath:
 
@@ -65,7 +65,7 @@ JMESPath is a query language that allows you to extract information from JSON da
 
    This returns the sum of all `value` fields in the data array.
 
-### Combining jq and JMESPath
+## Combining jq and JMESPath
 
 In some cases, you might need to combine jq and JMESPath for more complex data processing tasks. For example, you could use JMESPath to extract data and then use jq for further processing. Here is an example of combined usage:
 
@@ -111,7 +111,7 @@ Suppose you have a JSON string and you want to extract all objects where `value`
 
 In this process, we first use JMESPath's `parse` feature to extract JSON data, then use jq's query to filter out objects that meet the condition and calculate the discounted value. This way, we can fully utilize the strengths of jq and JMESPath for more flexible data processing.
 
-### Learning Resources
+## Learning Resources
 
 To delve deeper into and master jq and JMESPath, here are some recommended learning resources:
 

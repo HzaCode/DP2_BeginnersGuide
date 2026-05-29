@@ -28,8 +28,8 @@ When configuring the URL for `totalpage_step` on the DP2 platform, ensure that t
   "project_name": "{STU}.totalpage",
   "url": "http://www.example.com/products.html",
   "type": "one-off",
-  "priority": 10, // High priority to ensure it runs first
-  "interval": "86400", // Run once every day
+      "priority": 10,
+      "interval": "86400",
   "excluded_workers": "{excluded_workers}"
 }
 ```
@@ -42,18 +42,18 @@ When configuring the URL for `totalpage_step` on the DP2 platform, ensure that t
   "data_in": {
     "data_for_test": [
       {
-        "categoryLink": "example-category-list" // Placeholder for a category link from a previous step
+          "categoryLink": "example-category-list"
       }
     ]
   },
   "project_name": "{STU}.totalpage",
-  "url": "https://www.example.com/news/{categoryLink}-0.htm", // Dynamic URL construction using categoryLink
+  "url": "https://www.example.com/news/{categoryLink}-0.htm",
   "type": "one-off",
   "priority": 2,
   "fetch_method": "direct",
   "method": "GET",
   "extra_data": {
-    "linKey": "{categoryLink}" // Passing the categoryLink for further processing
+    "categoryLink": "{categoryLink}"
   },
   "status": 1,
   "charset": "UTF-8",
@@ -62,11 +62,11 @@ When configuring the URL for `totalpage_step` on the DP2 platform, ensure that t
   "pf_id": 1502,
   "data_out": [
     {
-      "jpath": "" // JSON Path for extracting specific data from the response, left empty as an example
+        "jpath": ""
     }
   ],
-  "interval": "86400", // Execution interval set to once every day
-  "excluded_workers": "{excluded_workers}" // Workers to exclude from executing this task
+  "interval": "86400",
+  "excluded_workers": "{excluded_workers}"
 }
 ```
 
@@ -79,4 +79,4 @@ Ensure the priority of `totalpage_step` is set high to run first at the beginnin
 
 ### Testing `totalpage_step`
 
-On the DP2 platform, you can test the configuration of `totalpage_step`. During the [testing process](Jexter%20Configuration：Extract%20the%20Total%20Number%20of%20Pages%20in%20`totalpage_step`.md), ensure that the total number of pages is correctly returned and there are no errors or exceptions. If the test results do not meet expectations, adjustments to the URL or data input configurations may be necessary.Properly setting up this step is crucial for the seamless progression of the entire data extraction task.
+On the DP2 platform, you can test the configuration of `totalpage_step`. During the [testing process](Jexter%20Configuration：Extract%20the%20Total%20Number%20of%20Pages%20in%20`totalpage_step`.md), ensure that the total number of pages is correctly returned and there are no errors or exceptions. If the test results do not meet expectations, adjustments to the URL or data input configurations may be necessary. Properly setting up this step is crucial for the seamless progression of the entire data extraction task.

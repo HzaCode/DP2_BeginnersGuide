@@ -2,7 +2,7 @@
 
 ## Study
 
-In the DP2 platform, the **Study** function allows users to plan and execute data processing activities in a project-oriented manner. Each study instance is designed as an integrated project container, consisting of a series of well-defined steps. Each step targets a specific segment of the data processing workflow. The global variables defined in a [study](Study：catogery_step.md) can be shared among steps, aiming to reduce repetitive configuration work, thereby improving the efficiency and flexibility of project execution. This design enables users to quickly adjust and optimize processing strategies for different data processing needs.
+In the DP2 platform, the **Study** function allows users to plan and execute data processing activities in a project-oriented manner. Each study instance is designed as an integrated project container, consisting of a series of well-defined steps. Each step targets a specific segment of the data processing workflow. The global variables defined in a [study](Study：category_step.md) can be shared among steps, aiming to reduce repetitive configuration work, thereby improving the efficiency and flexibility of project execution. This design enables users to quickly adjust and optimize processing strategies for different data processing needs.
 
 ## Jexter
 
@@ -60,5 +60,4 @@ Considering the need to process attachments in data processing tasks, the DP2 pl
 ## Data Updates and Notifications
 
 To keep users informed of the latest developments in data processing, the DP2 platform supports configuring real-time data update notification mechanisms. With simple settings, users can receive email or WeChat message notifications of data updates, allowing real-time monitoring of the status and results of data processing. This mechanism provides an efficient project management and monitoring tool for users, ensuring transparency and traceability in data processing activities.
-
 
